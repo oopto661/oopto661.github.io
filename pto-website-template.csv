@@ -1,0 +1,64 @@
+Section,Month_Or_Group,Date_Or_Role,Title_Or_Name,Description_Or_Email,Link_URL,Notes_Or_Color
+EVENT,August,Aug 12,Popsicles with PTO,"Cool off, meet fellow Owl families, and kick off the 2026-2027 school year together!",#events,pink
+EVENT,August,Aug 13,Coffee with the Principals,"Informal morning chat and Q&A with school leadership and PTO board members.",#events,pink
+EVENT,August,Aug 24,PTO Meeting (8:15 AM – Library),"Welcome back meeting, annual budget overview, and Fall event planning.",#meetings,pink
+EVENT,September,Sep 14,PowerUp PledgeDrive Kickoff,"Launch of our biggest annual school fundraiser supporting assemblies, field trips, and classrooms!",https://orchard.pledgestar.com/Welcome.html,gold
+EVENT,September,Sep 18,Fall Festival,"Evening of family carnival games, food, music, and community fun on campus.",#committees,gold
+EVENT,September,Sep 28,PTO Meeting (8:15 AM – Library),"PowerUp Fun Run final prep and Fall Festival wrap-up.",#meetings,gold
+EVENT,October,Oct 1,PowerUp Fun Run,"Our high-energy school-wide lap run! Cheer on our Owls as they run for their classrooms.",https://orchard.pledgestar.com/Welcome.html,sage
+EVENT,October,Oct 26,PTO Meeting (8:15 AM – Library),"Trunk or Treat logistics and November Book Fair planning.",#meetings,sage
+EVENT,October,Oct 30,Trunk or Treat,"Decorated car trunks, candy, and festive family fun in the school parking lot.",#committees,sage
+EVENT,October,Oct 30,Halloween Parade,"Our beloved morning costume parade on campus for students and families.",#events,sage
+EVENT,November,Nov 12–19,Book Fair,"Stock up on great reads! Every book purchased helps grow our school and classroom libraries.",#committees,sky
+EVENT,November,Nov 30**,PTO Meeting (8:15 AM – Library),"Holiday Gift Shop & Winter events planning (5th Monday due to Thanksgiving).",#meetings,sky
+EVENT,December,Dec 1–4,Family Gift Basket Collection,"Classrooms and families donate themed items for our seasonal raffle baskets.",#events,gold
+EVENT,December,Dec 7–11,Holiday Gift Shop,"Students shop for affordable, kid-friendly holiday gifts for family members and loved ones.",#events,gold
+EVENT,January,Jan 25,PTO Meeting (8:15 AM – Library),"Mid-year budget check-in and February family events prep.",#meetings,sage
+EVENT,January,Jan 29,Chuck E Cheese Night,"Dine and play out with Owl families! A percentage of all sales comes right back to Old Orchard PTO.",#events,sage
+EVENT,February,Feb 16,Bingo For Books,"Free family bingo night where every winning card takes home a brand-new book!",#committees,sky
+EVENT,February,Feb 17,Pastries with Parents,"Enjoy a sweet morning treat on campus with your student before the school bell rings.",#events,sky
+EVENT,February,Feb 18,Career Day,"Community members and parents share their professions and inspire our students.",#contact,sky
+EVENT,February,Feb 19,Owls' Family Dance,"Put on your dancing shoes for a memorable evening of music, photo booths, and treats!",#committees,sky
+EVENT,February,Feb 22,PTO Meeting (8:15 AM – Library),"Read Across America, Read-A-Thon, and Variety Show planning.",#meetings,sky
+EVENT,March,Mar 1–5,Read Across America,"Spirit days, guest readers, and campus-wide celebrations of the joy of reading.",#events,pink
+EVENT,March,All Month,Read-A-Thon,"Month-long reading challenge encouraging students to log minutes and build literacy skills.",#events,pink
+EVENT,March,Mar 10,Picnic with Parents,"Bring a blanket and lunch to campus to enjoy midday sunshine with your Owl!",#events,pink
+EVENT,March,Mar 22,PTO Meeting (8:15 AM – Library),"Multicultural Night and Staff Appreciation Week planning.",#meetings,pink
+EVENT,March,TBD,Variety Show,"Our talented Old Orchard Owls take the stage to sing, dance, and perform!",#events,pink
+EVENT,April,Apr 22,Multicultural Night,"Celebrate the rich cultures, traditions, foods, and heritage of our Old Orchard families.",#events,sage
+EVENT,April,Apr 26,PTO Meeting (8:15 AM – Library),"Next year PTO Board nominations and Open House prep.",#meetings,sage
+EVENT,April,Apr 26–30,Staff Appreciation,"A full week of pampering, lunches, and gratitude for our extraordinary teachers and staff.",#committees,sage
+EVENT,May,May 6,Open House,"Tour classrooms, celebrate student work from the year, and connect with teachers.",#events,sky
+EVENT,May,May 17–21,Penny Wars (TBD),"Friendly grade-level coin challenge raising funds for campus enrichment!",#events,sky
+EVENT,May,May 24,PTO Meeting (8:15 AM – Library),"2027-2028 Board election, year-end celebration, and summer handoff.",#meetings,sky
+EVENT,June,Summer,Have a Great Summer!,"Wishing all our Old Orchard Owls and families a safe, sunny, and restful summer break!",#events,pink
+MEETING,August,August 24,8:15 AM – School Library,"Welcome back meeting, annual budget overview, and Fall event planning.",,Regular
+MEETING,September,September 28,8:15 AM – School Library,"PowerUp Fun Run final prep and Fall Festival wrap-up.",,Regular
+MEETING,October,October 26,8:15 AM – School Library,"Trunk or Treat logistics and November Book Fair planning.",,Regular
+MEETING,November,November 30**,8:15 AM – School Library,"Holiday Gift Shop & Winter events planning.",**,**4th Monday is during Thanksgiving break
+MEETING,December,NO DECEMBER MEETING,Happy Holidays!,"No general PTO meeting in December. Enjoy the winter break with family!",,NoMeeting
+MEETING,January,January 25,8:15 AM – School Library,"Mid-year budget check-in and February family events prep.",,Regular
+MEETING,February,February 22,8:15 AM – School Library,"Read Across America, Read-A-Thon, and Variety Show planning.",,Regular
+MEETING,March,March 22,8:15 AM – School Library,"Multicultural Night and Staff Appreciation Week planning.",,Regular
+MEETING,April,April 26,8:15 AM – School Library,"Next year PTO Board nominations and Open House prep.",,Regular
+MEETING,May,May 24,8:15 AM – School Library,"2027-2028 Board election, year-end celebration, and summer handoff.",,Regular
+COMMITTEE,Events,Fall,Fall Festival & Trunk or Treat Committee,"Help plan booths, trunk registrations, candy donations, decorations, and evening event logistics for our biggest autumn traditions.",https://docs.google.com/forms/d/e/YOUR_VOLUNTEER_FORM_ID/viewform,High Impact
+COMMITTEE,Fundraising,Sep & Oct,PowerUp Fun Run & Fundraising Team,"Energize our biggest fundraiser of the year! Help with Pledgestar outreach, lap-counting, water stations, and prize distribution.",https://docs.google.com/forms/d/e/YOUR_VOLUNTEER_FORM_ID/viewform,Most Needed
+COMMITTEE,Literacy,Nov / Feb / Mar,Book Fair & Literacy Events (Bingo for Books / Read-A-Thon),"Set up and cashier at our Scholastic Book Fair, call numbers at Bingo for Books, and champion our March Read-A-Thon.",https://docs.google.com/forms/d/e/YOUR_VOLUNTEER_FORM_ID/viewform,Book Lovers
+COMMITTEE,Hospitality,Year-Round,Hospitality & Staff Appreciation Committee,"Coordinate Coffee with the Principals, Pastries with Parents, and our unforgettable April Staff Appreciation Week.",https://docs.google.com/forms/d/e/YOUR_VOLUNTEER_FORM_ID/viewform,Community Care
+COMMITTEE,Community,Winter & Spring,Owls' Family Dance & Community Nights,"Bring the magic to our February Owls' Family Dance, Multicultural Night, Variety Show, and local restaurant nights.",https://docs.google.com/forms/d/e/YOUR_VOLUNTEER_FORM_ID/viewform,Fun & Creative
+COMMITTEE,Campus Support,Weekly / Monthly,PBIS Store & Campus Support Volunteers,"Help sort Amazon Wishlist deliveries and staff the PBIS Reward Store so students can redeem their hard-earned Owl tickets!",https://docs.google.com/forms/d/e/YOUR_VOLUNTEER_FORM_ID/viewform,Flexible Hours
+BOARD,Executive,President,Katie Davis,president@oopto661.com,,2026–2027 Term
+BOARD,Executive,Co-Vice President,Heather Riggen,vp1@oopto661.com,,2026–2027 Term
+BOARD,Executive,Co-Vice President,Jennifer Patterson,vp2@oopto661.com,,2026–2027 Term
+BOARD,Executive,Treasurer,Isabel Contreras,treasurer@oopto661.com,,2026–2027 Term
+BOARD,Executive,Secretary,Lindsey Pugh Shen,secretary@oopto661.com,,2026–2027 Term
+BOARD,Chair,Parliamentarian,Xenia Barahona,parliamentarian@oopto661.com,,2026–2027 Term
+BOARD,Chair,Social Media Coordinator,McKenna Gates,social@oopto661.com,,2026–2027 Term
+LINK,Config,Pledgestar_URL,Donate via Pledgestar,Direct Giving & PowerUp PledgeDrive,https://orchard.pledgestar.com/Welcome.html,Primary CTA
+LINK,Config,PBIS_Wishlist_URL,Shop the PBIS Amazon Wishlist,Stock the Old Orchard Owls PBIS Reward Store,https://www.amazon.com/hz/wishlist/ls/3ES45EDEJPGX0/ref=hz_ls_biz_ex,Secondary CTA
+LINK,Config,Volunteer_Form_URL,Sign Up to Volunteer,Google Form for PTO Committee Sign-Ups,https://docs.google.com/forms/d/e/YOUR_VOLUNTEER_FORM_ID/viewform,Committee CTA
+LINK,Config,Google_Calendar_URL,View Live PTO Google Calendar,Subscribe to the Old Orchard PTO Google Calendar,https://calendar.google.com/calendar/u/0/r,Calendar CTA
+LINK,Config,Drive_Minutes_URL,View Agendas & Meeting Minutes,Public Google Drive folder for PTO Agendas and Minutes,https://drive.google.com/drive/folders/YOUR_MINUTES_FOLDER_ID,Transparency CTA
+LINK,Config,Drive_Bylaws_URL,PTO Bylaws & Budget,Public Google Drive folder for Bylaws and Approved Budget,https://drive.google.com/drive/folders/YOUR_BYLAWS_FOLDER_ID,Transparency CTA
+LINK,Config,PTO_Contact_Email,president@oopto661.com,Official Old Orchard Elementary PTO Contact Email,mailto:president@oopto661.com,Contact Info

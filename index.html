@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Old Orchard Elementary PTO | Valencia, CA — Soaring Higher Together (2026–2027)</title>
+  <meta name="description" content="Official website of the Old Orchard Elementary School PTO in Valencia / Santa Clarita, CA (Newhall School District). View the 2026-2027 event planner, donate via Pledgestar, stock the PBIS Store, and join a parent committee." />
+  <meta name="theme-color" content="#1B2668" />
+  <link rel="icon" type="image/jpeg" href="pto-logo.jpg" />
+
+  <!-- Preconnect & Google Fonts: Plus Jakarta Sans (UI/Body), Outfit (Collegiate/Display), Caveat (Planner Script Accent) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS v3.4 CDN with Brand Theme Configuration -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            owlNavy: '#1B2668',
+            owlNavyDark: '#121A4A',
+            owlRed: '#D81E28',
+            owlRedDark: '#B5161F',
+            owlGold: '#F5B716',
+            owlCream: '#FDF8F2',
+            plannerPink: '#FDE2E4',
+            plannerSage: '#E2F0CB',
+            plannerSky: '#E0F4FF',
+            plannerGold: '#FDECC8'
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['"Outfit"', 'system-ui', 'sans-serif'],
+            script: ['"Caveat"', 'cursive']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Critical Instant-Render Styles & Accessibility */
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background-color: #FDF8F2;
+      color: #0F172A;
+    }
+    .font-display {
+      font-family: 'Outfit', system-ui, sans-serif;
+    }
+    .font-script {
+      font-family: 'Caveat', cursive;
+    }
+    /* Subtle collegiate pattern overlay for hero & navy banners */
+    .bg-owl-pattern {
+      background-color: #1B2668;
+      background-image: radial-gradient(rgba(245, 183, 22, 0.12) 1px, transparent 1px),
+                        radial-gradient(rgba(255, 255, 255, 0.05) 1px, #1B2668 1px);
+      background-size: 32px 32px;
+      background-position: 0 0, 16px 16px;
+    }
+    @media print {
+      header, #mobile-nav-drawer, footer, #current-month-spotlight, [data-calendar-filter], #pbis, #committees, #volunteer, #contact, #planner-lightbox-modal, .no-print {
+        display: none !important;
+      }
+      body {
+        background: #ffffff !important;
+        color: #0f172a !important;
+      }
+      #calendar {
+        padding-top: 0 !important;
+        margin-bottom: 12px !important;
+      }
+      #annual-events-grid {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 12px !important;
+        margin-bottom: 20px !important;
+      }
+      article[data-month-card] {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+        box-shadow: none !important;
+        border: 1px solid #cbd5e1 !important;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-[#F5B716] selection:text-[#1B2668]">
+
+  <!-- Skip to Main Content for Screen Readers & Keyboard Accessibility -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:px-4 focus:py-2 focus:rounded-lg focus:bg-[#F5B716] focus:text-[#1B2668] focus:font-bold">
+    Skip to main content
+  </a>
+
+  <!-- Top School District Announcement Strip -->
+  <div class="bg-[#121A4A] text-white text-xs py-2 px-4 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-[#F5B716]"></span>
+        <span class="font-medium text-slate-200">Old Orchard Elementary School &bull; Newhall School District &bull; Valencia, CA</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#meetings" class="hover:text-[#F5B716] transition font-semibold hidden sm:inline">Meetings: 4th Mondays @ 8:15 AM (Library)</a>
+        <a href="https://www.oldorchardelementary.com" target="_blank" rel="noopener noreferrer" class="text-[#F5B716] hover:underline font-bold inline-flex items-center gap-1">
+          School Website
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       A. STICKY NAVBAR
+       ===================================================================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between min-h-[80px] py-2 gap-3">
+        <!-- Brand Logo & Title -->
+        <a href="#" class="flex items-center gap-3 group focus:outline-none shrink-0">
+          <img
+            src="pto-logo.jpg"
+            alt="Old Orchard Elementary PTO Owl Mascot Logo"
+            width="52"
+            height="52"
+            class="w-12 h-12 sm:w-13 sm:h-13 object-contain rounded-xl bg-white p-0.5 border border-slate-200/80 shadow-2xs group-hover:scale-105 transition-transform shrink-0"
+          />
+          <div class="flex flex-col justify-center">
+            <span class="block font-display font-black text-base sm:text-xl tracking-tight text-[#1B2668] leading-tight whitespace-nowrap">
+              OLD ORCHARD <span class="text-[#D81E28]">PTO</span>
+            </span>
+            <span class="block font-script text-base sm:text-lg text-[#D81E28] leading-tight whitespace-nowrap">
+              Elementary Owls &bull; 2026–2027
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav aria-label="Primary Navigation" class="hidden md:flex items-center gap-1 lg:gap-2">
+          <a href="#events" class="px-3 py-2 rounded-lg text-sm font-bold text-slate-700 hover:text-[#1B2668] hover:bg-slate-100/80 transition">Events</a>
+          <a href="#pbis" class="px-3 py-2 rounded-lg text-sm font-bold text-slate-700 hover:text-[#1B2668] hover:bg-slate-100/80 transition">PBIS Store</a>
+          <a href="#volunteer" class="px-3 py-2 rounded-lg text-sm font-bold text-slate-700 hover:text-[#1B2668] hover:bg-slate-100/80 transition">Volunteer</a>
+          <a href="#meetings" class="px-3 py-2 rounded-lg text-sm font-bold text-slate-700 hover:text-[#1B2668] hover:bg-slate-100/80 transition">Meetings</a>
+          <a href="#board" class="px-3 py-2 rounded-lg text-sm font-bold text-slate-700 hover:text-[#1B2668] hover:bg-slate-100/80 transition">Board</a>
+          <a href="#mission" class="px-3 py-2 rounded-lg text-sm font-bold text-slate-700 hover:text-[#1B2668] hover:bg-slate-100/80 transition">Mission</a>
+          <a href="#contact" class="px-3 py-2 rounded-lg text-sm font-bold text-slate-700 hover:text-[#1B2668] hover:bg-slate-100/80 transition">Contact</a>
+        </nav>
+
+        <!-- High-Contrast Crimson Donate CTA + Mobile Menu Toggle -->
+        <div class="flex items-center gap-2.5">
+          <a
+            href="https://orchard.pledgestar.com/Welcome.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-[#D81E28] hover:bg-[#B5161F] text-white font-display font-extrabold text-sm tracking-wide shadow-sm hover:shadow transition active:scale-95"
+          >
+            <svg class="w-4 h-4 text-[#F5B716] shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/></svg>
+            <span>Donate</span>
+          </a>
+
+          <button
+            id="mobile-menu-btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-nav-drawer"
+            aria-label="Toggle Navigation Menu"
+            class="md:hidden inline-flex items-center justify-center p-2.5 rounded-xl text-[#1B2668] hover:bg-slate-100 focus:outline-none"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav-drawer" class="hidden md:hidden bg-white border-t border-slate-200 px-4 pt-3 pb-5 space-y-1.5 shadow-lg">
+      <a href="#events" class="block px-3.5 py-2.5 rounded-xl text-base font-bold text-[#1B2668] hover:bg-[#FDF8F2]">Events &amp; 26–27 Planner</a>
+      <a href="#pbis" class="block px-3.5 py-2.5 rounded-xl text-base font-bold text-[#1B2668] hover:bg-[#FDF8F2]">PBIS Store &amp; Fundraising</a>
+      <a href="#volunteer" class="block px-3.5 py-2.5 rounded-xl text-base font-bold text-[#1B2668] hover:bg-[#FDF8F2]">Volunteer</a>
+      <a href="#meetings" class="block px-3.5 py-2.5 rounded-xl text-base font-bold text-[#1B2668] hover:bg-[#FDF8F2]">PTO Meetings</a>
+      <a href="#board" class="block px-3.5 py-2.5 rounded-xl text-base font-bold text-[#1B2668] hover:bg-[#FDF8F2]">Meet the Board</a>
+      <a href="#mission" class="block px-3.5 py-2.5 rounded-xl text-base font-bold text-[#1B2668] hover:bg-[#FDF8F2]">Our Mission</a>
+      <a href="#contact" class="block px-3.5 py-2.5 rounded-xl text-base font-bold text-[#1B2668] hover:bg-[#FDF8F2]">Contact Us</a>
+      <div class="pt-2 flex flex-col sm:flex-row gap-2">
+        <a href="https://orchard.pledgestar.com/Welcome.html" target="_blank" rel="noopener noreferrer" class="w-full text-center py-3 rounded-xl bg-[#D81E28] text-white font-display font-extrabold text-sm">
+          Donate via Pledgestar
+        </a>
+        <a href="https://www.amazon.com/hz/wishlist/ls/3ES45EDEJPGX0/ref=hz_ls_biz_ex" target="_blank" rel="noopener noreferrer" class="w-full text-center py-3 rounded-xl bg-[#F5B716] text-[#1B2668] font-display font-extrabold text-sm">
+          Stock the PBIS Store
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="flex-1">
+    <!-- =====================================================================
+         A. HERO SECTION & QUOTE CALLOUT BANNER
+         ===================================================================== -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-white via-[#FDF8F2] to-[#FDF8F2] pt-10 pb-14 lg:pt-16 lg:pb-20 border-b border-slate-200/70">
+      <!-- Decorative soft collegiate color blobs -->
+      <div aria-hidden="true" class="pointer-events-none absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#FDE2E4]/50 blur-3xl"></div>
+      <div aria-hidden="true" class="pointer-events-none absolute top-32 -left-24 w-80 h-80 rounded-full bg-[#E0F4FF]/60 blur-3xl"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          <!-- Left Column: Headline, Mission & Primary CTAs -->
+          <div class="lg:col-span-7 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1B2668]/8 border border-[#1B2668]/15 text-[#1B2668] text-xs font-extrabold uppercase tracking-wider mb-5">
+              <span class="w-2 h-2 rounded-full bg-[#D81E28]"></span>
+              2026–2027 School Year &bull; Old Orchard Owls
+            </div>
+
+            <h1 class="font-display font-black text-3xl sm:text-5xl lg:text-[52px] text-[#1B2668] tracking-tight leading-[1.1] mb-5">
+              Welcome to the Old Orchard Elementary PTO —
+              <span class="text-[#D81E28] underline decoration-[#F5B716] decoration-4 underline-offset-4">Soaring Higher Together!</span>
+            </h1>
+
+            <p class="text-base sm:text-lg text-slate-700 leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8 font-medium">
+              Partnering parents, teachers, and staff to enrich classrooms, fund student programs, and build an unforgettable school experience for every Old Orchard Owl.
+            </p>
+
+            <!-- Primary & Secondary CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3.5 mb-8">
+              <a
+                href="https://orchard.pledgestar.com/Welcome.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-2xl bg-[#D81E28] hover:bg-[#B5161F] text-white font-display font-extrabold text-base shadow-md hover:shadow-lg transition-all hover:-translate-y-0.5"
+              >
+                <svg class="w-5 h-5 text-[#F5B716] shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/></svg>
+                <span>Donate via Pledgestar</span>
+                <svg class="w-4 h-4 opacity-90" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+
+              <a
+                href="https://www.amazon.com/hz/wishlist/ls/3ES45EDEJPGX0/ref=hz_ls_biz_ex"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-2xl bg-[#1B2668] hover:bg-[#121A4A] text-white font-display font-extrabold text-base shadow-md hover:shadow-lg transition-all hover:-translate-y-0.5"
+              >
+                <svg class="w-5 h-5 text-[#F5B716] shrink-0" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/></svg>
+                <span>Stock the PBIS Store</span>
+              </a>
+            </div>
+
+            <!-- Quick Trust / At-a-Glance Highlights -->
+            <div class="grid grid-cols-3 gap-3 max-w-lg mx-auto lg:mx-0 pt-2 border-t border-slate-200/80 text-left">
+              <div>
+                <p class="font-display font-black text-xl sm:text-2xl text-[#1B2668]">100%</p>
+                <p class="text-xs text-slate-600 font-medium">Directly benefits Old Orchard students</p>
+              </div>
+              <div>
+                <p class="font-display font-black text-xl sm:text-2xl text-[#D81E28]">20+ Events</p>
+                <p class="text-xs text-slate-600 font-medium">Family nights, festivals &amp; literacy</p>
+              </div>
+              <div>
+                <p class="font-display font-black text-xl sm:text-2xl text-[#1B2668]">4th Mondays</p>
+                <p class="text-xs text-slate-600 font-medium">8:15 AM meetings in School Library</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Prominent Owl Mascot Logo Showcase Card -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-md">
+              <div aria-hidden="true" class="absolute -inset-2 rounded-3xl bg-gradient-to-tr from-[#1B2668] via-[#D81E28] to-[#F5B716] opacity-20 blur-xl"></div>
+              <div class="relative rounded-3xl bg-white p-6 sm:p-8 border-2 border-[#1B2668]/10 shadow-xl text-center">
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FDE2E4] text-[#D81E28] text-xs font-extrabold uppercase tracking-wider mb-4">
+                  Proud To Be An Old Orchard Owl
+                </div>
+                <img
+                  src="pto-logo.jpg"
+                  alt="Old Orchard Elementary PTO Mascot Logo — Owl with outstretched wings holding PTO letters"
+                  width="420"
+                  height="310"
+                  fetchpriority="high"
+                  class="w-full max-w-[340px] mx-auto h-auto object-contain"
+                />
+                <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-600">
+                  <span>Valencia, CA 91355</span>
+                  <a href="#calendar" class="text-[#1B2668] hover:text-[#D81E28] inline-flex items-center gap-1">
+                    See 26–27 Planner &darr;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quote Callout Banner from the 26-27 Planner -->
+        <div class="mt-12 lg:mt-16 rounded-3xl bg-owl-pattern text-white p-6 sm:p-8 lg:px-12 shadow-lg border border-[#F5B716]/30 relative overflow-hidden">
+          <div class="max-w-4xl mx-auto text-center">
+            <p class="font-script text-2xl sm:text-3xl lg:text-4xl text-[#F5B716] leading-snug mb-2">
+              &ldquo;Vision without Action is merely a dream. Action without Vision just passes the time. Vision with Action can change the world.&rdquo;
+            </p>
+            <p class="font-display font-bold text-xs sm:text-sm uppercase tracking-widest text-slate-200">
+              &mdash; Joel A. Barker
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         B. UPCOMING EVENTS & 2026–2027 PTO PLANNER (#events & #calendar)
+         ===================================================================== -->
+    <section id="events" class="py-16 lg:py-20 bg-white border-b border-slate-200/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+          <div>
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FDE2E4] text-[#D81E28] text-xs font-extrabold uppercase tracking-wider mb-3">
+              Mark Your Calendars
+            </span>
+            <h2 class="font-display font-black text-3xl sm:text-4xl text-[#1B2668] tracking-tight">
+              Upcoming Events &amp; 2026–2027 PTO Planner
+            </h2>
+            <p class="text-slate-600 text-base mt-1.5 max-w-2xl">
+              Automatically highlighting what's happening right now on campus, followed by our complete 2026–2027 school year calendar.
+            </p>
+          </div>
+          <div class="flex items-center gap-2 self-start md:self-auto">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 text-slate-700 text-xs font-bold">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span id="cms-sync-status">2026–2027 Schedule Pre-Loaded</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Automatic Current / Next Month Spotlight Banner -->
+        <div class="rounded-3xl bg-[#1B2668] p-5 sm:p-7 shadow-xl mb-14 border-2 border-[#1B2668]">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-4 text-white">
+            <div class="flex items-center gap-2.5">
+              <span class="inline-flex items-center justify-center w-8 h-8 rounded-xl bg-[#F5B716] text-[#1B2668] font-display font-black text-sm">
+                ★
+              </span>
+              <div>
+                <h3 id="spotlight-months-label" class="font-display font-extrabold text-lg sm:text-xl text-white leading-none">
+                  Current &amp; Next Month Spotlight
+                </h3>
+                <p class="text-xs text-slate-300 mt-0.5">Auto-updated based on today's date</p>
+              </div>
+            </div>
+            <a href="#calendar" class="text-xs font-bold text-[#F5B716] hover:underline">
+              Jump to Printable Planner &darr;
+            </a>
+          </div>
+
+          <!-- Populated immediately by sheet-sync.js (with static noscript/initial fallback inside) -->
+          <div id="current-month-spotlight">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-800">
+              <div class="rounded-2xl bg-[#FDF8F2] p-5 border-2 border-[#F5B716]">
+                <p class="text-xs font-extrabold uppercase text-[#D81E28] mb-1">Featured School Events</p>
+                <p class="font-bold text-[#1B2668]">Nov 12–19: Book Fair &bull; Dec 1–4: Family Gift Basket Collection &bull; Dec 7–11: Holiday Gift Shop</p>
+              </div>
+              <div class="rounded-2xl bg-white p-5">
+                <p class="text-xs font-extrabold uppercase text-[#1B2668] mb-1">Upcoming PTO Meeting</p>
+                <p class="font-bold text-[#1B2668]">November 30** at 8:15 AM in the School Library (**4th Monday is during Thanksgiving break)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Bar for the 2026-2027 Annual Event Grid -->
+        <div id="calendar" class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-7 pt-2">
+          <div>
+            <h3 class="font-display font-black text-2xl text-[#1B2668] flex items-center gap-2.5">
+              <span>2026–2027 Annual Event Grid</span>
+              <span class="font-script text-2xl text-[#D81E28] font-normal">PTO Planner 26–27</span>
+            </h3>
+          </div>
+          <div class="flex flex-wrap items-center gap-2" role="group" aria-label="Filter calendar by season">
+            <button type="button" data-calendar-filter="all" class="px-3.5 py-1.5 rounded-xl text-xs font-extrabold bg-[#1B2668] text-white shadow-sm transition">
+              All Months (Aug–Jun)
+            </button>
+            <button type="button" data-calendar-filter="spotlight" class="px-3.5 py-1.5 rounded-xl text-xs font-extrabold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 transition">
+              This &amp; Next Month
+            </button>
+            <button type="button" data-calendar-filter="fall" class="px-3.5 py-1.5 rounded-xl text-xs font-extrabold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 transition">
+              Fall (Aug–Nov)
+            </button>
+            <button type="button" data-calendar-filter="winter" class="px-3.5 py-1.5 rounded-xl text-xs font-extrabold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 transition">
+              Winter (Dec–Feb)
+            </button>
+            <button type="button" data-calendar-filter="spring" class="px-3.5 py-1.5 rounded-xl text-xs font-extrabold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 transition">
+              Spring (Mar–Jun)
+            </button>
+          </div>
+        </div>
+
+        <!-- Pre-Rendered 2026-2027 Monthly Planner Cards (Instant 0.1s Paint + Offline Ready) -->
+        <div id="annual-events-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-14">
+          <!-- AUGUST -->
+          <article data-month-card="August" class="rounded-2xl bg-[#FDF8F2] border border-[#f8c6ca] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+            <div>
+              <div class="bg-[#FDE2E4] px-5 py-3.5 flex items-center justify-between border-b border-[#f8c6ca]">
+                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">August</h4>
+                <div data-month-badge></div>
+              </div>
+              <div class="p-5">
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#D81E28]/10 text-[#D81E28]">Aug 12</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Popsicles with PTO</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#D81E28]/10 text-[#D81E28]">Aug 13</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Coffee with the Principals</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm pt-1 border-t border-slate-200/60">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#1B2668] text-white">Aug 24</span>
+                    <div>
+                      <span class="font-bold text-[#1B2668] leading-snug block">PTO Meeting</span>
+                      <span class="text-[11px] text-slate-500 font-medium">8:15 AM &bull; Library</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- SEPTEMBER -->
+          <article data-month-card="September" class="rounded-2xl bg-[#FDF8F2] border border-[#f5d89a] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+            <div>
+              <div class="bg-[#FDECC8] px-5 py-3.5 flex items-center justify-between border-b border-[#f5d89a]">
+                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">September</h4>
+                <div data-month-badge></div>
+              </div>
+              <div class="p-5">
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#b47800]/15 text-[#8a5b00]">Sep 14</span>
+                    <span class="font-semibold text-slate-800 leading-snug">PowerUp PledgeDrive Kickoff</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#b47800]/15 text-[#8a5b00]">Sep 18</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Fall Festival</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm pt-1 border-t border-slate-200/60">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#1B2668] text-white">Sep 28</span>
+                    <div>
+                      <span class="font-bold text-[#1B2668] leading-snug block">PTO Meeting</span>
+                      <span class="text-[11px] text-slate-500 font-medium">8:15 AM &bull; Library</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- OCTOBER -->
+          <article data-month-card="October" class="rounded-2xl bg-[#FDF8F2] border border-[#c5e09b] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+            <div>
+              <div class="bg-[#E2F0CB] px-5 py-3.5 flex items-center justify-between border-b border-[#c5e09b]">
+                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">October</h4>
+                <div data-month-badge></div>
+              </div>
+              <div class="p-5">
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#2f681d]/15 text-[#275918]">Oct 1</span>
+                    <span class="font-semibold text-slate-800 leading-snug">PowerUp Fun Run</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm pt-1 border-t border-slate-200/60">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#1B2668] text-white">Oct 26</span>
+                    <div>
+                      <span class="font-bold text-[#1B2668] leading-snug block">PTO Meeting</span>
+                      <span class="text-[11px] text-slate-500 font-medium">8:15 AM &bull; Library</span>
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#2f681d]/15 text-[#275918]">Oct 30</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Trunk or Treat</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#2f681d]/15 text-[#275918]">Oct 30</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Halloween Parade</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- NOVEMBER -->
+          <article data-month-card="November" class="rounded-2xl bg-[#FDF8F2] border border-[#b3e2fc] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+            <div>
+              <div class="bg-[#E0F4FF] px-5 py-3.5 flex items-center justify-between border-b border-[#b3e2fc]">
+                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">November</h4>
+                <div data-month-badge></div>
+              </div>
+              <div class="p-5">
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#1B2668]/10 text-[#1B2668]">Nov 12–19</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Book Fair</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm pt-1 border-t border-slate-200/60">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#1B2668] text-white">Nov 30**</span>
+                    <div>
+                      <span class="font-bold text-[#1B2668] leading-snug block">PTO Meeting</span>
+                      <span class="text-[11px] text-slate-500 font-medium">8:15 AM &bull; Library</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- DECEMBER -->
+          <article data-month-card="December" class="rounded-2xl bg-[#FDF8F2] border border-[#f5d89a] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+            <div>
+              <div class="bg-[#FDECC8] px-5 py-3.5 flex items-center justify-between border-b border-[#f5d89a]">
+                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">December</h4>
+                <div data-month-badge></div>
+              </div>
+              <div class="p-5">
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#b47800]/15 text-[#8a5b00]">Dec 1–4</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Family Gift Basket Collection</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#b47800]/15 text-[#8a5b00]">Dec 7–11</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Holiday Gift Shop</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-xs text-slate-400 italic pt-1 border-t border-slate-200/60">
+                    <span>No Dec Meeting &bull; Winter Break</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- JANUARY -->
+          <article data-month-card="January" class="rounded-2xl bg-[#FDF8F2] border border-[#c5e09b] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+            <div>
+              <div class="bg-[#E2F0CB] px-5 py-3.5 flex items-center justify-between border-b border-[#c5e09b]">
+                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">January</h4>
+                <div data-month-badge></div>
+              </div>
+              <div class="p-5">
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#1B2668] text-white">Jan 25</span>
+                    <div>
+                      <span class="font-bold text-[#1B2668] leading-snug block">PTO Meeting</span>
+                      <span class="text-[11px] text-slate-500 font-medium">8:15 AM &bull; Library</span>
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#2f681d]/15 text-[#275918]">Jan 29</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Chuck E Cheese Night</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- FEBRUARY -->
+          <article data-month-card="February" class="rounded-2xl bg-[#FDF8F2] border border-[#b3e2fc] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+            <div>
+              <div class="bg-[#E0F4FF] px-5 py-3.5 flex items-center justify-between border-b border-[#b3e2fc]">
+                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">February</h4>
+                <div data-month-badge></div>
+              </div>
+              <div class="p-5">
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#1B2668]/10 text-[#1B2668]">Feb 16</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Bingo For Books</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#1B2668]/10 text-[#1B2668]">Feb 17</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Pastries with Parents</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#1B2668]/10 text-[#1B2668]">Feb 18</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Career Day</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#1B2668]/10 text-[#1B2668]">Feb 19</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Owls' Family Dance</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm pt-1 border-t border-slate-200/60">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#1B2668] text-white">Feb 22</span>
+                    <div>
+                      <span class="font-bold text-[#1B2668] leading-snug block">PTO Meeting</span>
+                      <span class="text-[11px] text-slate-500 font-medium">8:15 AM &bull; Library</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- MARCH -->
+          <article data-month-card="March" class="rounded-2xl bg-[#FDF8F2] border border-[#f8c6ca] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+            <div>
+              <div class="bg-[#FDE2E4] px-5 py-3.5 flex items-center justify-between border-b border-[#f8c6ca]">
+                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">March</h4>
+                <div data-month-badge></div>
+              </div>
+              <div class="p-5">
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#D81E28]/10 text-[#D81E28]">Mar 1–5</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Read Across America</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#D81E28]/10 text-[#D81E28]">All Month</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Read-A-Thon</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#D81E28]/10 text-[#D81E28]">Mar 10</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Picnic with Parents</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm pt-1 border-t border-slate-200/60">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#1B2668] text-white">Mar 22</span>
+                    <div>
+                      <span class="font-bold text-[#1B2668] leading-snug block">PTO Meeting</span>
+                      <span class="text-[11px] text-slate-500 font-medium">8:15 AM &bull; Library</span>
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#D81E28]/10 text-[#D81E28]">TBD</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Variety Show</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- APRIL -->
+          <article data-month-card="April" class="rounded-2xl bg-[#FDF8F2] border border-[#c5e09b] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+            <div>
+              <div class="bg-[#E2F0CB] px-5 py-3.5 flex items-center justify-between border-b border-[#c5e09b]">
+                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">April</h4>
+                <div data-month-badge></div>
+              </div>
+              <div class="p-5">
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#2f681d]/15 text-[#275918]">Apr 22</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Multicultural Night</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm pt-1 border-t border-slate-200/60">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#1B2668] text-white">Apr 26</span>
+                    <div>
+                      <span class="font-bold text-[#1B2668] leading-snug block">PTO Meeting</span>
+                      <span class="text-[11px] text-slate-500 font-medium">8:15 AM &bull; Library</span>
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#2f681d]/15 text-[#275918]">Apr 26–30</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Staff Appreciation</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- MAY -->
+          <article data-month-card="May" class="rounded-2xl bg-[#FDF8F2] border border-[#b3e2fc] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+            <div>
+              <div class="bg-[#E0F4FF] px-5 py-3.5 flex items-center justify-between border-b border-[#b3e2fc]">
+                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">May</h4>
+                <div data-month-badge></div>
+              </div>
+              <div class="p-5">
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#1B2668]/10 text-[#1B2668]">May 6</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Open House</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#1B2668]/10 text-[#1B2668]">May 17–21</span>
+                    <span class="font-semibold text-slate-800 leading-snug">Penny Wars (TBD)</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-sm pt-1 border-t border-slate-200/60">
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#1B2668] text-white">May 24</span>
+                    <div>
+                      <span class="font-bold text-[#1B2668] leading-snug block">PTO Meeting</span>
+                      <span class="text-[11px] text-slate-500 font-medium">8:15 AM &bull; Library</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- JUNE -->
+          <article data-month-card="June" class="rounded-2xl bg-[#FDF8F2] border border-[#f8c6ca] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md sm:col-span-2 lg:col-span-2">
+            <div>
+              <div class="bg-[#FDE2E4] px-5 py-3.5 flex items-center justify-between border-b border-[#f8c6ca]">
+                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">June</h4>
+                <div data-month-badge></div>
+              </div>
+              <div class="p-5 flex items-center justify-between gap-4">
+                <div>
+                  <span class="inline-block px-2.5 py-1 rounded-md font-bold text-xs bg-[#D81E28]/10 text-[#D81E28] mb-1.5">Summer Break</span>
+                  <p class="font-display font-extrabold text-xl text-[#1B2668]">Have a Great Summer!</p>
+                  <p class="text-xs text-slate-600 mt-0.5">Thank you for an amazing 2026–2027 school year, Old Orchard Owls!</p>
+                </div>
+                <span class="text-4xl select-none" aria-hidden="true">☀️🦉</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Calendar Download & External Link Card (Zero-Embed Visual CTA Card) -->
+        <div class="rounded-3xl bg-[#FDF8F2] border-2 border-[#1B2668]/15 p-6 sm:p-8 lg:p-10 shadow-md">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Left: Visual Preview of pto-calendar-26-27.jpg -->
+            <div class="lg:col-span-5">
+              <div class="relative group rounded-2xl overflow-hidden border-2 border-slate-200 bg-white shadow-sm">
+                <img
+                  src="pto-calendar-26-27.jpg"
+                  alt="Old Orchard Elementary PTO Planner 2026-2027 Fridge Calendar Preview"
+                  width="500"
+                  height="680"
+                  loading="lazy"
+                  class="w-full max-h-96 object-contain mx-auto p-2 transition-transform duration-300 group-hover:scale-[1.02]"
+                />
+                <button
+                  id="open-planner-modal"
+                  type="button"
+                  class="absolute inset-0 bg-[#1B2668]/0 group-hover:bg-[#1B2668]/30 transition flex items-end justify-center p-4"
+                >
+                  <span class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/95 text-[#1B2668] font-bold text-xs shadow-md">
+                    <svg class="w-4 h-4 text-[#D81E28]" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                    Click to Enlarge 26–27 Planner
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right: High-Converting Download & Google Calendar Action Buttons -->
+            <div class="lg:col-span-7">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E0F4FF] text-[#1B2668] text-xs font-extrabold uppercase tracking-wider mb-3">
+                Fridge-Ready &amp; Mobile Sync
+              </span>
+              <h3 class="font-display font-black text-2xl sm:text-3xl text-[#1B2668] mb-3">
+                Save the 2026–2027 PTO Planner to Your Fridge or Phone
+              </h3>
+              <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+                Never miss a Spirit Day, Family Dance, Book Fair, or morning PTO meeting! Download our official illustrated one-page 2026–2027 Planner to print for your refrigerator, or open our live Google Calendar on your phone.
+              </p>
+
+              <div class="flex flex-col sm:flex-row flex-wrap gap-3.5">
+                <a
+                  href="pto-calendar-26-27.jpg"
+                  download="Old-Orchard-PTO-Planner-2026-2027.jpg"
+                  class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-[#1B2668] hover:bg-[#121A4A] text-white font-display font-extrabold text-sm shadow-sm hover:shadow transition"
+                >
+                  <svg class="w-5 h-5 text-[#F5B716]" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                  <span>Download Printable 26-27 Planner (JPG)</span>
+                </a>
+
+                <button
+                  type="button"
+                  onclick="window.print()"
+                  class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-[#D81E28] hover:bg-[#B5161F] text-white font-display font-extrabold text-sm shadow-sm hover:shadow transition cursor-pointer"
+                >
+                  <svg class="w-5 h-5 text-[#F5B716]" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                  <span>Print Planner</span>
+                </button>
+
+                <a
+                  href="https://calendar.google.com/calendar/u/0/r"
+                  data-config-link="gcal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-white hover:bg-slate-50 text-[#1B2668] border-2 border-[#1B2668] font-display font-extrabold text-sm transition"
+                >
+                  <svg class="w-5 h-5 text-[#D81E28]" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>View Live PTO Google Calendar</span>
+                  <svg class="w-4 h-4 opacity-75" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         C. SUPPORT OUR OWLS: FUNDRAISING & DONATE TO THE PBIS STORE (#donate & #pbis)
+         ===================================================================== -->
+    <section id="pbis" class="py-16 lg:py-20 bg-[#FDF8F2] border-b border-slate-200/70">
+      <div id="donate" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#1B2668]/10 text-[#1B2668] text-xs font-extrabold uppercase tracking-wider mb-3">
+            Every Owl Counts
+          </span>
+          <h2 class="font-display font-black text-3xl sm:text-4xl text-[#1B2668] tracking-tight">
+            Support Our Owls: Fundraising &amp; PBIS Store
+          </h2>
+          <p class="text-slate-600 text-base mt-2">
+            Two direct, high-impact ways your family can fuel classroom magic and reward positive student behavior at Old Orchard Elementary.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+          <!-- Card 1: Direct Giving & PledgeDrive (Pledgestar) -->
+          <div class="rounded-3xl bg-white border-2 border-[#D81E28]/20 p-7 sm:p-9 shadow-md flex flex-col justify-between relative overflow-hidden">
+            <div>
+              <div class="flex items-center justify-between gap-3 mb-5">
+                <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-[#FDE2E4] text-[#D81E28] text-xs font-extrabold uppercase tracking-wider">
+                  Direct Giving &amp; PowerUp Fun Run
+                </span>
+                <span class="font-display font-black text-xs uppercase tracking-wider text-slate-400">Tax-Deductible 501(c)(3)</span>
+              </div>
+
+              <h3 class="font-display font-black text-2xl sm:text-3xl text-[#1B2668] mb-3">
+                Direct Giving &amp; PledgeDrive (Pledgestar)
+              </h3>
+
+              <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+                Family and community contributions through Pledgestar are the heartbeat of our PTO budget. Unlike traditional catalog sales where third-party vendors keep half the proceeds, direct giving keeps funds right here at Old Orchard to directly pay for:
+              </p>
+
+              <ul class="space-y-3 mb-8 text-sm text-slate-700 font-medium">
+                <li class="flex items-start gap-2.5">
+                  <span class="w-5 h-5 rounded-full bg-[#D81E28]/15 text-[#D81E28] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">&#10003;</span>
+                  <span><strong>Enrichment Assemblies &amp; Field Trips</strong> that bring science, arts, and history to life for every grade level.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="w-5 h-5 rounded-full bg-[#D81E28]/15 text-[#D81E28] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">&#10003;</span>
+                  <span><strong>Classroom Supplies &amp; Teacher Grants</strong> so our educators have the tools they need without paying out of pocket.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="w-5 h-5 rounded-full bg-[#D81E28]/15 text-[#D81E28] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">&#10003;</span>
+                  <span><strong>Community Events &amp; Campus Spirit</strong> like our Fall Festival, Trunk or Treat, and Multicultural Night.</span>
+                </li>
+              </ul>
+            </div>
+
+            <a
+              href="https://orchard.pledgestar.com/Welcome.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-2xl bg-[#D81E28] hover:bg-[#B5161F] text-white font-display font-extrabold text-base shadow-md hover:shadow-lg transition"
+            >
+              <span>Donate on Pledgestar</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+          </div>
+
+          <!-- Card 2: Donate to the PBIS Store (Amazon Wishlist) -->
+          <div class="rounded-3xl bg-[#1B2668] text-white border-2 border-[#F5B716]/40 p-7 sm:p-9 shadow-md flex flex-col justify-between relative overflow-hidden">
+            <div>
+              <div class="flex items-center justify-between gap-3 mb-5">
+                <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-[#F5B716] text-[#1B2668] text-xs font-extrabold uppercase tracking-wider">
+                  Positive Behavior Rewards
+                </span>
+                <span class="font-script text-2xl text-[#F5B716]">Wise Owl Choices!</span>
+              </div>
+
+              <h3 class="font-display font-black text-2xl sm:text-3xl text-white mb-3">
+                Donate to the PBIS Store
+              </h3>
+
+              <p class="text-slate-200 text-sm sm:text-base leading-relaxed mb-6">
+                Our <strong>Positive Behavioral Interventions and Supports (PBIS) Store</strong> celebrates and rewards Old Orchard Owls for demonstrating positive behavior, safety, respect, and responsibility across campus.
+              </p>
+
+              <ul class="space-y-3 mb-8 text-sm text-slate-100 font-medium">
+                <li class="flex items-start gap-2.5">
+                  <span class="w-5 h-5 rounded-full bg-[#F5B716] text-[#1B2668] flex items-center justify-center font-extrabold text-xs shrink-0 mt-0.5">1</span>
+                  <span>Students earn incentives all month long for kindness, leadership, and safe choices on the playground and in class.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="w-5 h-5 rounded-full bg-[#F5B716] text-[#1B2668] flex items-center justify-center font-extrabold text-xs shrink-0 mt-0.5">2</span>
+                  <span>Parents &amp; supporters can purchase pre-selected reward items directly from our official <strong>Amazon Wishlist</strong>.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="w-5 h-5 rounded-full bg-[#F5B716] text-[#1B2668] flex items-center justify-center font-extrabold text-xs shrink-0 mt-0.5">3</span>
+                  <span>Items ship straight to Old Orchard Elementary—keeping the shelves stocked and our Owls beaming with pride!</span>
+                </li>
+              </ul>
+            </div>
+
+            <a
+              href="https://www.amazon.com/hz/wishlist/ls/3ES45EDEJPGX0/ref=hz_ls_biz_ex"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-2xl bg-[#F5B716] hover:bg-[#e5a80d] text-[#1B2668] font-display font-extrabold text-base shadow-md hover:shadow-lg transition"
+            >
+              <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+              <span>Shop the PBIS Amazon Wishlist</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         D. VOLUNTEER & COMMITTEES (#volunteer & #committees)
+         ===================================================================== -->
+    <section id="volunteer" class="py-16 lg:py-20 bg-white border-b border-slate-200/70">
+      <div id="committees"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E2F0CB] text-[#275918] text-xs font-extrabold uppercase tracking-wider mb-3">
+            Volunteer With Us
+          </span>
+          <h2 class="font-display font-black text-3xl sm:text-4xl text-[#1B2668] tracking-tight">
+            Volunteer &amp; Join a Committee
+          </h2>
+          <p class="text-slate-600 text-base mt-2">
+            Whether you have 30 minutes a month or love planning campus-wide celebrations, there is a welcoming spot for you on our team!
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Committee 1 -->
+          <div class="rounded-2xl bg-[#FDF8F2] border border-slate-200/90 p-6 flex flex-col justify-between hover:shadow-md transition">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-[#FDE2E4] text-[#D81E28]">Autumn Traditions</span>
+                <span class="text-xs font-bold text-slate-500">Sep &amp; Oct</span>
+              </div>
+              <h3 class="font-display font-extrabold text-xl text-[#1B2668] mb-2">
+                Fall Festival &amp; Trunk or Treat Committee
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-5">
+                Help plan carnival booths, trunk registrations, candy donations, decorations, and evening event logistics for our biggest autumn family traditions.
+              </p>
+            </div>
+            <a
+              href="https://docs.google.com/forms/d/e/YOUR_VOLUNTEER_FORM_ID/viewform"
+              data-config-link="volunteer"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 w-full px-4 py-3 rounded-xl bg-white hover:bg-[#1B2668] text-[#1B2668] hover:text-white border border-[#1B2668]/20 font-display font-bold text-sm transition"
+            >
+              <span>Sign Up to Help</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Committee 2 -->
+          <div class="rounded-2xl bg-[#FDF8F2] border border-slate-200/90 p-6 flex flex-col justify-between hover:shadow-md transition">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-[#FDECC8] text-[#8a5b00]">High Energy</span>
+                <span class="text-xs font-bold text-slate-500">Sep &amp; Oct</span>
+              </div>
+              <h3 class="font-display font-extrabold text-xl text-[#1B2668] mb-2">
+                PowerUp Fun Run &amp; Fundraising Team
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-5">
+                Energize our biggest fundraiser of the year! Help with Pledgestar outreach, lap-counting, water stations, music, and student prize distribution.
+              </p>
+            </div>
+            <a
+              href="https://docs.google.com/forms/d/e/YOUR_VOLUNTEER_FORM_ID/viewform"
+              data-config-link="volunteer"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 w-full px-4 py-3 rounded-xl bg-white hover:bg-[#1B2668] text-[#1B2668] hover:text-white border border-[#1B2668]/20 font-display font-bold text-sm transition"
+            >
+              <span>Sign Up to Help</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Committee 3 -->
+          <div class="rounded-2xl bg-[#FDF8F2] border border-slate-200/90 p-6 flex flex-col justify-between hover:shadow-md transition">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-[#E0F4FF] text-[#1B2668]">Literacy Champions</span>
+                <span class="text-xs font-bold text-slate-500">Nov / Feb / Mar</span>
+              </div>
+              <h3 class="font-display font-extrabold text-xl text-[#1B2668] mb-2">
+                Book Fair &amp; Literacy Events (Bingo for Books / Read-A-Thon)
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-5">
+                Set up and help students shop at our November Book Fair, call numbers at February's Bingo for Books, and champion our March Read-A-Thon.
+              </p>
+            </div>
+            <a
+              href="https://docs.google.com/forms/d/e/YOUR_VOLUNTEER_FORM_ID/viewform"
+              data-config-link="volunteer"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 w-full px-4 py-3 rounded-xl bg-white hover:bg-[#1B2668] text-[#1B2668] hover:text-white border border-[#1B2668]/20 font-display font-bold text-sm transition"
+            >
+              <span>Sign Up to Help</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Committee 4 -->
+          <div class="rounded-2xl bg-[#FDF8F2] border border-slate-200/90 p-6 flex flex-col justify-between hover:shadow-md transition">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-[#E2F0CB] text-[#275918]">Heart of Campus</span>
+                <span class="text-xs font-bold text-slate-500">Year-Round</span>
+              </div>
+              <h3 class="font-display font-extrabold text-xl text-[#1B2668] mb-2">
+                Hospitality &amp; Staff Appreciation Committee
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-5">
+                Coordinate Popsicles with PTO, Coffee with the Principals, Pastries with Parents, and our unforgettable April Staff Appreciation Week.
+              </p>
+            </div>
+            <a
+              href="https://docs.google.com/forms/d/e/YOUR_VOLUNTEER_FORM_ID/viewform"
+              data-config-link="volunteer"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 w-full px-4 py-3 rounded-xl bg-white hover:bg-[#1B2668] text-[#1B2668] hover:text-white border border-[#1B2668]/20 font-display font-bold text-sm transition"
+            >
+              <span>Sign Up to Help</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Committee 5 -->
+          <div class="rounded-2xl bg-[#FDF8F2] border border-slate-200/90 p-6 flex flex-col justify-between hover:shadow-md transition">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-[#FDE2E4] text-[#D81E28]">Family Memories</span>
+                <span class="text-xs font-bold text-slate-500">Jan – Apr</span>
+              </div>
+              <h3 class="font-display font-extrabold text-xl text-[#1B2668] mb-2">
+                Owls' Family Dance &amp; Community Nights
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-5">
+                Bring the magic to our February Owls' Family Dance, April Multicultural Night, March Variety Show, and restaurant nights like Chuck E Cheese!
+              </p>
+            </div>
+            <a
+              href="https://docs.google.com/forms/d/e/YOUR_VOLUNTEER_FORM_ID/viewform"
+              data-config-link="volunteer"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 w-full px-4 py-3 rounded-xl bg-white hover:bg-[#1B2668] text-[#1B2668] hover:text-white border border-[#1B2668]/20 font-display font-bold text-sm transition"
+            >
+              <span>Sign Up to Help</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Committee 6 -->
+          <div class="rounded-2xl bg-[#FDF8F2] border border-slate-200/90 p-6 flex flex-col justify-between hover:shadow-md transition">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-[#E0F4FF] text-[#1B2668]">Flexible Schedule</span>
+                <span class="text-xs font-bold text-slate-500">Monthly</span>
+              </div>
+              <h3 class="font-display font-extrabold text-xl text-[#1B2668] mb-2">
+                PBIS Store &amp; Campus Support Volunteers
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-5">
+                Help unbox and sort Amazon Wishlist deliveries, run the December Holiday Gift Shop, and staff the PBIS Reward Store for our students.
+              </p>
+            </div>
+            <a
+              href="https://docs.google.com/forms/d/e/YOUR_VOLUNTEER_FORM_ID/viewform"
+              data-config-link="volunteer"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 w-full px-4 py-3 rounded-xl bg-white hover:bg-[#1B2668] text-[#1B2668] hover:text-white border border-[#1B2668]/20 font-display font-bold text-sm transition"
+            >
+              <span>Sign Up to Help</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         E. PTO MEETINGS (#meetings)
+         ===================================================================== -->
+    <section id="meetings" class="py-16 lg:py-20 bg-[#FDF8F2] border-b border-slate-200/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          <!-- Left Column: Meeting Info & Transparency Links -->
+          <div class="lg:col-span-5">
+            <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#1B2668]/10 text-[#1B2668] text-xs font-extrabold uppercase tracking-wider mb-3">
+              Voice &amp; Transparency
+            </span>
+            <h2 class="font-display font-black text-3xl sm:text-4xl text-[#1B2668] tracking-tight mb-4">
+              General PTO Meetings
+            </h2>
+            <p class="text-slate-600 text-base leading-relaxed mb-6">
+              Everyone is welcome! Join us right after morning drop-off to hear school updates directly from the Principal and teachers, vote on funding requests, and help shape upcoming campus events.
+            </p>
+
+            <!-- Location & Time Highlight Box -->
+            <div class="rounded-2xl bg-white border-2 border-[#1B2668]/15 p-5 shadow-xs mb-6">
+              <div class="flex items-start gap-3.5">
+                <div class="w-11 h-11 rounded-xl bg-[#1B2668] text-[#F5B716] flex items-center justify-center shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <p class="text-xs font-extrabold uppercase tracking-wider text-[#D81E28]">When &amp; Where</p>
+                  <p class="font-display font-black text-lg text-[#1B2668]">School Library</p>
+                  <p class="text-sm font-bold text-slate-700">4th Monday of the month at 8:15 AM</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Transparency CTA Buttons -->
+            <div class="space-y-3">
+              <a
+                href="https://drive.google.com/drive/folders/YOUR_MINUTES_FOLDER_ID"
+                data-config-link="minutes"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full inline-flex items-center justify-between px-5 py-3.5 rounded-2xl bg-[#1B2668] hover:bg-[#121A4A] text-white font-display font-bold text-sm shadow-xs transition"
+              >
+                <span class="inline-flex items-center gap-2.5">
+                  <svg class="w-5 h-5 text-[#F5B716]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                  View Agendas &amp; Meeting Minutes (Google Drive)
+                </span>
+                <span>&rarr;</span>
+              </a>
+
+              <a
+                href="https://drive.google.com/drive/folders/YOUR_BYLAWS_FOLDER_ID"
+                data-config-link="bylaws"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full inline-flex items-center justify-between px-5 py-3.5 rounded-2xl bg-white hover:bg-slate-50 text-[#1B2668] border-2 border-[#1B2668]/20 font-display font-bold text-sm transition"
+              >
+                <span class="inline-flex items-center gap-2.5">
+                  <svg class="w-5 h-5 text-[#D81E28]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                  PTO Bylaws &amp; Budget
+                </span>
+                <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: 2026-2027 Meeting Dates Schedule Grid -->
+          <div class="lg:col-span-7">
+            <div class="rounded-3xl bg-white border border-slate-200/90 p-6 sm:p-8 shadow-sm">
+              <div class="flex items-center justify-between gap-2 mb-5 pb-3 border-b border-slate-100">
+                <h3 class="font-display font-extrabold text-xl text-[#1B2668]">
+                  2026–2027 General Meeting Schedule
+                </h3>
+                <span class="font-script text-2xl text-[#D81E28]">8:15 AM in Library</span>
+              </div>
+
+              <div id="meetings-schedule-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                <div data-meeting-month="August" class="p-4 rounded-xl border bg-white border-slate-200/90 flex items-start justify-between gap-3 shadow-2xs">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-extrabold uppercase tracking-wider text-[#D81E28]">August</span>
+                      <span data-meeting-badge class="hidden px-2 py-0.5 rounded-full text-[10px] font-extrabold uppercase bg-[#F5B716] text-[#1B2668]"></span>
+                    </div>
+                    <p class="font-display font-bold text-base text-[#1B2668] mt-0.5">August 24</p>
+                    <p class="text-xs text-slate-600 mt-0.5">8:15 AM &bull; School Library</p>
+                  </div>
+                </div>
+
+                <div data-meeting-month="September" class="p-4 rounded-xl border bg-white border-slate-200/90 flex items-start justify-between gap-3 shadow-2xs">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-extrabold uppercase tracking-wider text-[#D81E28]">September</span>
+                      <span data-meeting-badge class="hidden px-2 py-0.5 rounded-full text-[10px] font-extrabold uppercase bg-[#F5B716] text-[#1B2668]"></span>
+                    </div>
+                    <p class="font-display font-bold text-base text-[#1B2668] mt-0.5">September 28</p>
+                    <p class="text-xs text-slate-600 mt-0.5">8:15 AM &bull; School Library</p>
+                  </div>
+                </div>
+
+                <div data-meeting-month="October" class="p-4 rounded-xl border bg-white border-slate-200/90 flex items-start justify-between gap-3 shadow-2xs">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-extrabold uppercase tracking-wider text-[#D81E28]">October</span>
+                      <span data-meeting-badge class="hidden px-2 py-0.5 rounded-full text-[10px] font-extrabold uppercase bg-[#F5B716] text-[#1B2668]"></span>
+                    </div>
+                    <p class="font-display font-bold text-base text-[#1B2668] mt-0.5">October 26</p>
+                    <p class="text-xs text-slate-600 mt-0.5">8:15 AM &bull; School Library</p>
+                  </div>
+                </div>
+
+                <div data-meeting-month="November" class="p-4 rounded-xl border bg-white border-slate-200/90 flex items-start justify-between gap-3 shadow-2xs">
+                  <div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                      <span class="text-xs font-extrabold uppercase tracking-wider text-[#D81E28]">November</span>
+                      <span data-meeting-badge class="hidden px-2 py-0.5 rounded-full text-[10px] font-extrabold uppercase bg-[#F5B716] text-[#1B2668]"></span>
+                      <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-[#FDE2E4] text-[#D81E28]">5th Monday</span>
+                    </div>
+                    <p class="font-display font-bold text-base text-[#1B2668] mt-0.5">November 30**</p>
+                    <p class="text-xs text-slate-600 mt-0.5">**4th Monday is during Thanksgiving break</p>
+                  </div>
+                </div>
+
+                <div data-meeting-month="December" class="p-4 rounded-xl border bg-slate-100/80 border-slate-200 text-slate-500 flex items-start justify-between gap-3">
+                  <div>
+                    <span class="text-xs font-extrabold uppercase tracking-wider text-slate-400">December</span>
+                    <p class="font-display font-bold text-base text-slate-600 mt-0.5">NO DECEMBER MEETING</p>
+                    <p class="text-xs text-slate-500 mt-0.5">Enjoy the Holidays &amp; Winter Break!</p>
+                  </div>
+                </div>
+
+                <div data-meeting-month="January" class="p-4 rounded-xl border bg-white border-slate-200/90 flex items-start justify-between gap-3 shadow-2xs">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-extrabold uppercase tracking-wider text-[#D81E28]">January</span>
+                      <span data-meeting-badge class="hidden px-2 py-0.5 rounded-full text-[10px] font-extrabold uppercase bg-[#F5B716] text-[#1B2668]"></span>
+                    </div>
+                    <p class="font-display font-bold text-base text-[#1B2668] mt-0.5">January 25</p>
+                    <p class="text-xs text-slate-600 mt-0.5">8:15 AM &bull; School Library</p>
+                  </div>
+                </div>
+
+                <div data-meeting-month="February" class="p-4 rounded-xl border bg-white border-slate-200/90 flex items-start justify-between gap-3 shadow-2xs">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-extrabold uppercase tracking-wider text-[#D81E28]">February</span>
+                      <span data-meeting-badge class="hidden px-2 py-0.5 rounded-full text-[10px] font-extrabold uppercase bg-[#F5B716] text-[#1B2668]"></span>
+                    </div>
+                    <p class="font-display font-bold text-base text-[#1B2668] mt-0.5">February 22</p>
+                    <p class="text-xs text-slate-600 mt-0.5">8:15 AM &bull; School Library</p>
+                  </div>
+                </div>
+
+                <div data-meeting-month="March" class="p-4 rounded-xl border bg-white border-slate-200/90 flex items-start justify-between gap-3 shadow-2xs">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-extrabold uppercase tracking-wider text-[#D81E28]">March</span>
+                      <span data-meeting-badge class="hidden px-2 py-0.5 rounded-full text-[10px] font-extrabold uppercase bg-[#F5B716] text-[#1B2668]"></span>
+                    </div>
+                    <p class="font-display font-bold text-base text-[#1B2668] mt-0.5">March 22</p>
+                    <p class="text-xs text-slate-600 mt-0.5">8:15 AM &bull; School Library</p>
+                  </div>
+                </div>
+
+                <div data-meeting-month="April" class="p-4 rounded-xl border bg-white border-slate-200/90 flex items-start justify-between gap-3 shadow-2xs">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-extrabold uppercase tracking-wider text-[#D81E28]">April</span>
+                      <span data-meeting-badge class="hidden px-2 py-0.5 rounded-full text-[10px] font-extrabold uppercase bg-[#F5B716] text-[#1B2668]"></span>
+                    </div>
+                    <p class="font-display font-bold text-base text-[#1B2668] mt-0.5">April 26</p>
+                    <p class="text-xs text-slate-600 mt-0.5">8:15 AM &bull; School Library</p>
+                  </div>
+                </div>
+
+                <div data-meeting-month="May" class="p-4 rounded-xl border bg-white border-slate-200/90 flex items-start justify-between gap-3 shadow-2xs">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-extrabold uppercase tracking-wider text-[#D81E28]">May</span>
+                      <span data-meeting-badge class="hidden px-2 py-0.5 rounded-full text-[10px] font-extrabold uppercase bg-[#F5B716] text-[#1B2668]"></span>
+                    </div>
+                    <p class="font-display font-bold text-base text-[#1B2668] mt-0.5">May 24</p>
+                    <p class="text-xs text-slate-600 mt-0.5">8:15 AM &bull; School Library</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-xs text-slate-500 mt-4 pt-3 border-t border-slate-100">
+                <strong>**Note:</strong> In November, the 4th Monday falls during Thanksgiving break, so our November PTO meeting moves to Monday, November 30 at 8:15 AM.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         F. MEET THE PTO BOARD (#board)
+         ===================================================================== -->
+    <section id="board" class="py-16 lg:py-20 bg-white border-b border-slate-200/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E0F4FF] text-[#1B2668] text-xs font-extrabold uppercase tracking-wider mb-3">
+            Parent &amp; Teacher Leadership
+          </span>
+          <h2 class="font-display font-black text-3xl sm:text-4xl text-[#1B2668] tracking-tight">
+            Meet the PTO Executive Board
+          </h2>
+          <p class="text-slate-600 text-base mt-2">
+            Our volunteer parent board is here to serve the Old Orchard family. Have an idea, question, or want to get involved? Reach out anytime!
+          </p>
+        </div>
+
+        <div id="board-members-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- 1. President: Katie Davis -->
+          <div class="rounded-2xl bg-[#FDF8F2] border border-slate-200/90 p-6 shadow-2xs hover:shadow-md transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider bg-[#1B2668] text-white">
+                  President
+                </span>
+                <span class="text-xs font-semibold text-slate-400">2026–2027</span>
+              </div>
+              <h3 class="font-display text-xl font-bold text-[#1B2668] mb-1">Katie Davis</h3>
+              <p class="text-xs text-slate-600">Leads PTO meetings, partners with school administration, and oversees annual goals.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-200/70">
+              <a href="mailto:president@oopto661.com" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#D81E28] hover:underline">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                president@oopto661.com
+              </a>
+            </div>
+          </div>
+
+          <!-- 2. Co-Vice President: Heather Riggen -->
+          <div class="rounded-2xl bg-[#FDF8F2] border border-slate-200/90 p-6 shadow-2xs hover:shadow-md transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider bg-[#1B2668] text-white">
+                  Co-Vice President
+                </span>
+                <span class="text-xs font-semibold text-slate-400">2026–2027</span>
+              </div>
+              <h3 class="font-display text-xl font-bold text-[#1B2668] mb-1">Heather Riggen</h3>
+              <p class="text-xs text-slate-600">Supports committees, campus events, and partners with leadership across PTO programs.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-200/70">
+              <a href="mailto:vp1@oopto661.com" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#D81E28] hover:underline">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                vp1@oopto661.com
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. Co-Vice President: Jennifer Patterson -->
+          <div class="rounded-2xl bg-[#FDF8F2] border border-slate-200/90 p-6 shadow-2xs hover:shadow-md transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider bg-[#1B2668] text-white">
+                  Co-Vice President
+                </span>
+                <span class="text-xs font-semibold text-slate-400">2026–2027</span>
+              </div>
+              <h3 class="font-display text-xl font-bold text-[#1B2668] mb-1">Jennifer Patterson</h3>
+              <p class="text-xs text-slate-600">Coordinates volunteer initiatives, school-wide events, and executive board operations.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-200/70">
+              <a href="mailto:vp2@oopto661.com" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#D81E28] hover:underline">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                vp2@oopto661.com
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. Treasurer: Isabel Contreras -->
+          <div class="rounded-2xl bg-[#FDF8F2] border border-slate-200/90 p-6 shadow-2xs hover:shadow-md transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider bg-[#1B2668] text-white">
+                  Treasurer
+                </span>
+                <span class="text-xs font-semibold text-slate-400">2026–2027</span>
+              </div>
+              <h3 class="font-display text-xl font-bold text-[#1B2668] mb-1">Isabel Contreras</h3>
+              <p class="text-xs text-slate-600">Manages PTO finances, teacher reimbursements, monthly budget reports, and 501(c)(3) compliance.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-200/70">
+              <a href="mailto:treasurer@oopto661.com" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#D81E28] hover:underline">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                treasurer@oopto661.com
+              </a>
+            </div>
+          </div>
+
+          <!-- 5. Secretary: Lindsey Pugh Shen -->
+          <div class="rounded-2xl bg-[#FDF8F2] border border-slate-200/90 p-6 shadow-2xs hover:shadow-md transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider bg-[#1B2668] text-white">
+                  Secretary
+                </span>
+                <span class="text-xs font-semibold text-slate-400">2026–2027</span>
+              </div>
+              <h3 class="font-display text-xl font-bold text-[#1B2668] mb-1">Lindsey Pugh Shen</h3>
+              <p class="text-xs text-slate-600">Records meeting agendas, official minutes, and keeps our parent community informed.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-200/70">
+              <a href="mailto:secretary@oopto661.com" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#D81E28] hover:underline">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                secretary@oopto661.com
+              </a>
+            </div>
+          </div>
+
+          <!-- 6. Parliamentarian: Xenia Barahona -->
+          <div class="rounded-2xl bg-[#FDF8F2] border border-slate-200/90 p-6 shadow-2xs hover:shadow-md transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider bg-[#1B2668] text-white">
+                  Parliamentarian
+                </span>
+                <span class="text-xs font-semibold text-slate-400">2026–2027</span>
+              </div>
+              <h3 class="font-display text-xl font-bold text-[#1B2668] mb-1">Xenia Barahona</h3>
+              <p class="text-xs text-slate-600">Advises on PTO bylaws, parliamentary procedure, board nominations, and governance.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-200/70">
+              <a href="mailto:parliamentarian@oopto661.com" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#D81E28] hover:underline">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                parliamentarian@oopto661.com
+              </a>
+            </div>
+          </div>
+
+          <!-- 7. Social Media Coordinator: McKenna Gates -->
+          <div class="rounded-2xl bg-[#FDF8F2] border border-slate-200/90 p-6 shadow-2xs hover:shadow-md transition flex flex-col justify-between sm:col-span-2 lg:col-span-3 max-w-md mx-auto w-full">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider bg-[#1B2668] text-white">
+                  Social Media Coordinator
+                </span>
+                <span class="text-xs font-semibold text-slate-400">2026–2027</span>
+              </div>
+              <h3 class="font-display text-xl font-bold text-[#1B2668] mb-1">McKenna Gates</h3>
+              <p class="text-xs text-slate-600">Shares spirit days, event reminders, photos, and community highlights with Old Orchard families.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-200/70">
+              <a href="mailto:social@oopto661.com" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#D81E28] hover:underline">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                social@oopto661.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         G. MISSION (#mission) — UNDERNEATH BOARD MEMBERS
+         ===================================================================== -->
+    <section id="mission" class="py-16 lg:py-20 bg-gradient-to-b from-[#FDF8F2] via-white to-[#FDF8F2] border-b border-slate-200/70 relative overflow-hidden">
+      <!-- Soft collegiate background glow -->
+      <div aria-hidden="true" class="pointer-events-none absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#F5B716]/10 blur-3xl"></div>
+      <div aria-hidden="true" class="pointer-events-none absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-[#1B2668]/5 blur-3xl"></div>
+
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="relative bg-white/95 backdrop-blur-xs rounded-3xl border-2 border-[#1B2668]/10 p-8 sm:p-12 lg:p-14 shadow-xl">
+          <!-- Top Accent Row -->
+          <div class="flex items-center justify-between flex-wrap gap-4 mb-8 pb-6 border-b border-slate-100">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1B2668]/8 text-[#1B2668] text-xs font-extrabold uppercase tracking-wider">
+              <span class="w-2 h-2 rounded-full bg-[#D81E28]"></span>
+              Our Commitment to Old Orchard
+            </div>
+            <span class="font-script text-2xl sm:text-3xl text-[#D81E28]">Soaring Higher Together</span>
+          </div>
+
+          <!-- Aesthetic Mission Presentation -->
+          <div class="relative mb-10 pl-4 sm:pl-6 border-l-4 border-[#F5B716]">
+            <p class="relative z-10 font-display font-medium text-lg sm:text-xl lg:text-2xl text-[#1B2668] leading-relaxed text-left">
+              We work to promote the education and well-being of all children at home, in school, and in the community by providing a forum for discussion and fostering communication between parents, administrators, educators, and the community. Collectively we try to enhance the educational facilities and opportunities for the students of Old Orchard Elementary School that are not otherwise provided for in the school budgets through volunteer programs and acquiring resources for Old Orchard Elementary School as well as sponsoring projects and events for the benefit of Old Orchard students. We work together to raise funds as required to provide for all the above objectives.
+            </p>
+          </div>
+
+          <!-- 3 Aesthetic Pillar Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+            <div class="rounded-2xl bg-[#FDF8F2] p-6 border border-[#1B2668]/10 flex flex-col justify-between hover:shadow-sm transition">
+              <div>
+                <div class="w-11 h-11 rounded-xl bg-[#1B2668] text-[#F5B716] flex items-center justify-center font-bold mb-3.5 shadow-2xs">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                </div>
+                <h4 class="font-display font-extrabold text-base text-[#1B2668] mb-1.5">Fostering Communication</h4>
+                <p class="text-xs text-slate-600 leading-relaxed">Providing a transparent forum connecting families, teachers, and administrators to champion student well-being.</p>
+              </div>
+            </div>
+
+            <div class="rounded-2xl bg-[#FDF8F2] p-6 border border-[#1B2668]/10 flex flex-col justify-between hover:shadow-sm transition">
+              <div>
+                <div class="w-11 h-11 rounded-xl bg-[#D81E28] text-white flex items-center justify-center font-bold mb-3.5 shadow-2xs">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                </div>
+                <h4 class="font-display font-extrabold text-base text-[#1B2668] mb-1.5">Campus Enhancement</h4>
+                <p class="text-xs text-slate-600 leading-relaxed">Upgrading educational facilities and acquiring classroom learning tools that go beyond standard school budgets.</p>
+              </div>
+            </div>
+
+            <div class="rounded-2xl bg-[#FDF8F2] p-6 border border-[#1B2668]/10 flex flex-col justify-between hover:shadow-sm transition">
+              <div>
+                <div class="w-11 h-11 rounded-xl bg-[#F5B716] text-[#1B2668] flex items-center justify-center font-bold mb-3.5 shadow-2xs">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                </div>
+                <h4 class="font-display font-extrabold text-base text-[#1B2668] mb-1.5">Events &amp; Volunteers</h4>
+                <p class="text-xs text-slate-600 leading-relaxed">Organizing school-wide projects, festivals, and raising funds so all Old Orchard Owls have opportunities to thrive.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         G. CONTACT US & GET IN TOUCH (#contact)
+         ===================================================================== -->
+    <section id="contact" class="py-16 lg:py-20 bg-[#FDF8F2]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          <!-- Left Column: Direct Contact Info & Quick Links -->
+          <div class="lg:col-span-5">
+            <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#FDE2E4] text-[#D81E28] text-xs font-extrabold uppercase tracking-wider mb-3">
+              We'd Love to Hear From You
+            </span>
+            <h2 class="font-display font-black text-3xl sm:text-4xl text-[#1B2668] tracking-tight mb-4">
+              Contact Us &amp; Get in Touch
+            </h2>
+            <p class="text-slate-600 text-base leading-relaxed mb-8">
+              Have a question about an upcoming event, want to volunteer on campus, or interested in sponsoring the Old Orchard Owls? Send us a note and a PTO board member will reply promptly.
+            </p>
+
+            <div class="space-y-4 mb-8">
+              <!-- Official PTO Email -->
+              <div class="flex items-start gap-3.5 p-4 rounded-2xl bg-white border border-slate-200/80 shadow-2xs">
+                <div class="w-10 h-10 rounded-xl bg-[#FDE2E4] text-[#D81E28] flex items-center justify-center shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div>
+                  <p class="text-xs font-extrabold uppercase tracking-wider text-slate-400">Official PTO Email</p>
+                  <a href="mailto:president@oopto661.com" data-config-email class="font-display font-bold text-base text-[#1B2668] hover:text-[#D81E28] transition">
+                    president@oopto661.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- School Address -->
+              <div class="flex items-start gap-3.5 p-4 rounded-2xl bg-white border border-slate-200/80 shadow-2xs">
+                <div class="w-10 h-10 rounded-xl bg-[#E0F4FF] text-[#1B2668] flex items-center justify-center shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </div>
+                <div>
+                  <p class="text-xs font-extrabold uppercase tracking-wider text-slate-400">Campus Location</p>
+                  <p class="font-display font-bold text-base text-[#1B2668]">Old Orchard Elementary School</p>
+                  <p class="text-sm text-slate-600">25141 N. Avenida Rondel, Valencia, CA 91355</p>
+                </div>
+              </div>
+
+              <!-- Official School Website -->
+              <div class="flex items-start gap-3.5 p-4 rounded-2xl bg-white border border-slate-200/80 shadow-2xs">
+                <div class="w-10 h-10 rounded-xl bg-[#E2F0CB] text-[#275918] flex items-center justify-center shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+                </div>
+                <div>
+                  <p class="text-xs font-extrabold uppercase tracking-wider text-slate-400">School Website (Newhall School District)</p>
+                  <a href="https://www.oldorchardelementary.com" target="_blank" rel="noopener noreferrer" class="font-display font-bold text-base text-[#1B2668] hover:text-[#D81E28] inline-flex items-center gap-1 transition">
+                    www.oldorchardelementary.com
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Links Box -->
+            <div class="rounded-2xl bg-[#1B2668] text-white p-5">
+              <p class="text-xs font-extrabold uppercase tracking-wider text-[#F5B716] mb-3">Direct Support Quick Links</p>
+              <div class="flex flex-col sm:flex-row gap-2.5">
+                <a href="https://orchard.pledgestar.com/Welcome.html" target="_blank" rel="noopener noreferrer" class="flex-1 text-center px-4 py-2.5 rounded-xl bg-[#D81E28] hover:bg-[#B5161F] text-white font-display font-bold text-xs transition">
+                  Donate on Pledgestar &rarr;
+                </a>
+                <a href="https://www.amazon.com/hz/wishlist/ls/3ES45EDEJPGX0/ref=hz_ls_biz_ex" target="_blank" rel="noopener noreferrer" class="flex-1 text-center px-4 py-2.5 rounded-xl bg-[#F5B716] hover:bg-[#e5a80d] text-[#1B2668] font-display font-bold text-xs transition">
+                  PBIS Amazon Wishlist &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Zero-Maintenance Contact Form (FormSubmit + JS Handler) -->
+          <div class="lg:col-span-7">
+            <div class="rounded-3xl bg-white border border-slate-200/90 p-6 sm:p-9 shadow-md">
+              <h3 class="font-display font-extrabold text-2xl text-[#1B2668] mb-1">
+                Send a Message to the PTO Board
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-500 mb-6">
+                Fill out the form below and we will get back to you as soon as possible.
+              </p>
+
+              <form
+                id="pto-contact-form"
+                action="https://formsubmit.co/president@oopto661.com"
+                method="POST"
+                class="space-y-4"
+              >
+                <!-- FormSubmit Configuration & Honeypot Spam Protection -->
+                <input type="hidden" name="_subject" value="New Old Orchard Elementary PTO Website Inquiry" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="parent-name" class="block text-xs font-extrabold uppercase tracking-wider text-[#1B2668] mb-1.5">
+                      Parent / Guardian Name <span class="text-[#D81E28]">*</span>
+                    </label>
+                    <input
+                      id="parent-name"
+                      name="name"
+                      type="text"
+                      required
+                      placeholder="Jane Owl"
+                      class="w-full px-4 py-3 rounded-xl bg-[#FDF8F2] border border-slate-300 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#1B2668] focus:bg-white transition"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="parent-email" class="block text-xs font-extrabold uppercase tracking-wider text-[#1B2668] mb-1.5">
+                      Email Address <span class="text-[#D81E28]">*</span>
+                    </label>
+                    <input
+                      id="parent-email"
+                      name="email"
+                      type="email"
+                      required
+                      placeholder="parent@example.com"
+                      class="w-full px-4 py-3 rounded-xl bg-[#FDF8F2] border border-slate-300 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#1B2668] focus:bg-white transition"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="child-grade" class="block text-xs font-extrabold uppercase tracking-wider text-[#1B2668] mb-1.5">
+                      Child's Grade / Teacher <span class="text-slate-400 font-normal">(Optional)</span>
+                    </label>
+                    <input
+                      id="child-grade"
+                      name="grade_teacher"
+                      type="text"
+                      placeholder="e.g., 3rd Grade"
+                      class="w-full px-4 py-3 rounded-xl bg-[#FDF8F2] border border-slate-300 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#1B2668] focus:bg-white transition"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="inquiry-topic" class="block text-xs font-extrabold uppercase tracking-wider text-[#1B2668] mb-1.5">
+                      Topic <span class="text-[#D81E28]">*</span>
+                    </label>
+                    <select
+                      id="inquiry-topic"
+                      name="topic"
+                      required
+                      class="w-full px-4 py-3 rounded-xl bg-[#FDF8F2] border border-slate-300 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#1B2668] focus:bg-white transition"
+                    >
+                      <option value="General Question">General Question</option>
+                      <option value="Volunteering">Volunteering</option>
+                      <option value="Fundraising">Fundraising</option>
+                      <option value="PBIS Store">PBIS Store</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="inquiry-message" class="block text-xs font-extrabold uppercase tracking-wider text-[#1B2668] mb-1.5">
+                    Message <span class="text-[#D81E28]">*</span>
+                  </label>
+                  <textarea
+                    id="inquiry-message"
+                    name="message"
+                    rows="4"
+                    required
+                    placeholder="How can we help, or which committee/event would you like to join?"
+                    class="w-full px-4 py-3 rounded-xl bg-[#FDF8F2] border border-slate-300 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#1B2668] focus:bg-white transition"
+                  ></textarea>
+                </div>
+
+                <div id="contact-form-status" class="hidden p-4 rounded-xl border text-sm"></div>
+
+                <button
+                  type="submit"
+                  class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-[#1B2668] hover:bg-[#121A4A] text-white font-display font-extrabold text-sm tracking-wide shadow-md hover:shadow-lg transition cursor-pointer"
+                >
+                  <span>Send Message to PTO</span>
+                  <svg class="w-4 h-4 text-[#F5B716]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================================
+       H. FOOTER & NONPROFIT VERIFICATION COMPLIANCE
+       ===================================================================== -->
+  <footer class="bg-[#121A4A] text-slate-300 pt-14 pb-10 border-t-4 border-[#F5B716]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-white/10">
+        <!-- Brand & Mission Col -->
+        <div class="md:col-span-5">
+          <div class="flex items-center gap-3.5 mb-4">
+            <img src="pto-logo.jpg" alt="Old Orchard Elementary PTO Logo" width="48" height="48" class="w-12 h-12 rounded-xl bg-white p-0.5 object-contain" />
+            <div>
+              <p class="font-display font-black text-lg text-white leading-none">Old Orchard Elementary PTO</p>
+              <p class="font-script text-xl text-[#F5B716] leading-none mt-0.5">Soaring Higher Together</p>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-md mb-4">
+            Supporting the students, teachers, and families of Old Orchard Elementary School in the Newhall School District through community events, PBIS rewards, and educational enrichment.
+          </p>
+          <p class="text-xs text-slate-400">
+            <strong>School Address:</strong> 25141 N. Avenida Rondel, Valencia, CA 91355
+          </p>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div class="md:col-span-3">
+          <h3 class="font-display font-extrabold text-xs uppercase tracking-wider text-[#F5B716] mb-3">Quick Navigation</h3>
+          <ul class="space-y-2 text-xs sm:text-sm font-medium">
+            <li><a href="#events" class="hover:text-white transition">2026–2027 Event Planner</a></li>
+            <li><a href="#pbis" class="hover:text-white transition">Fundraising &amp; PBIS Store</a></li>
+            <li><a href="#volunteer" class="hover:text-white transition">Volunteer Opportunities</a></li>
+            <li><a href="#meetings" class="hover:text-white transition">PTO Meetings &amp; Minutes</a></li>
+            <li><a href="#board" class="hover:text-white transition">Executive Board</a></li>
+            <li><a href="#mission" class="hover:text-white transition">Our Mission</a></li>
+            <li><a href="#contact" class="hover:text-white transition">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- External Official Links -->
+        <div class="md:col-span-4">
+          <h3 class="font-display font-extrabold text-xs uppercase tracking-wider text-[#F5B716] mb-3">Essential Links</h3>
+          <ul class="space-y-2.5 text-xs sm:text-sm font-medium">
+            <li>
+              <a href="https://orchard.pledgestar.com/Welcome.html" target="_blank" rel="noopener noreferrer" class="text-white hover:text-[#F5B716] font-bold inline-flex items-center gap-1.5 transition">
+                <span>Donate via Pledgestar</span>
+                <span>&nearr;</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.amazon.com/hz/wishlist/ls/3ES45EDEJPGX0/ref=hz_ls_biz_ex" target="_blank" rel="noopener noreferrer" class="text-white hover:text-[#F5B716] font-bold inline-flex items-center gap-1.5 transition">
+                <span>Shop PBIS Store Amazon Wishlist</span>
+                <span>&nearr;</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.oldorchardelementary.com" target="_blank" rel="noopener noreferrer" class="hover:text-white inline-flex items-center gap-1.5 transition">
+                <span>Official Old Orchard Elementary Website</span>
+                <span>&nearr;</span>
+              </a>
+            </li>
+            <li>
+              <a href="pto-calendar-26-27.jpg" download="Old-Orchard-PTO-Planner-2026-2027.jpg" class="hover:text-white inline-flex items-center gap-1.5 transition">
+                <span>Download 2026–2027 Printable Planner (JPG)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 501(c)(3) Nonprofit Verification & Compliance Line (Required for Google for Nonprofits / Goodstack) -->
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div class="text-center sm:text-left space-y-1">
+          <p class="text-slate-200 font-semibold">
+            Old Orchard Elementary PTO is a registered 501(c)(3) tax-exempt nonprofit organization (EIN: <span class="font-mono text-[#F5B716]">20-4891373</span> &bull; Domain: <span class="text-white">oopto661.com</span>).
+          </p>
+          <p>
+            Contributions are tax-deductible to the fullest extent permitted by law. Operating independently in support of Old Orchard Elementary School (25141 N. Avenida Rondel, Valencia, CA 91355).
+          </p>
+        </div>
+        <div class="text-center sm:text-right shrink-0">
+          <p>&copy; 2026–2027 Old Orchard Elementary PTO.</p>
+          <p class="text-[11px] text-slate-500">All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Enlarging the 2026-2027 Planner Image -->
+  <div
+    id="planner-lightbox-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-label="2026-2027 PTO Planner Full Preview"
+    class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-xs items-center justify-center p-4"
+  >
+    <div class="relative max-w-3xl w-full bg-white rounded-3xl p-4 sm:p-6 shadow-2xl max-h-[92vh] flex flex-col">
+      <div class="flex items-center justify-between gap-4 pb-3 mb-3 border-b border-slate-200">
+        <h3 class="font-display font-bold text-lg text-[#1B2668]">Old Orchard PTO Planner 2026–2027</h3>
+        <div class="flex items-center gap-2">
+          <a
+            href="pto-calendar-26-27.jpg"
+            download="Old-Orchard-PTO-Planner-2026-2027.jpg"
+            class="px-3.5 py-1.5 rounded-xl bg-[#D81E28] text-white font-bold text-xs"
+          >
+            Download JPG
+          </a>
+          <button
+            id="close-planner-modal"
+            type="button"
+            aria-label="Close preview"
+            class="p-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-sm"
+          >
+            &#10005;
+          </button>
+        </div>
+      </div>
+      <div class="overflow-y-auto flex-1 text-center">
+        <img src="pto-calendar-26-27.jpg" alt="Full size Old Orchard Elementary PTO 2026-2027 Planner" class="max-w-full h-auto mx-auto rounded-xl" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightweight Vanilla JS Sync & Interactive Engine -->
+  <script src="sheet-sync.js" defer></script>
+</body>
+</html>
