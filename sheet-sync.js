@@ -497,6 +497,7 @@ function applySyncedDataToDOM(data) {
       meetingsGrid.innerHTML = data.meetings.map((m) => {
         const isNoMeeting = m.note === "NoMeeting" || m.date.toUpperCase().includes("NO DECEMBER");
         const isSpecial = m.date.includes("**");
+        const zoomUrl = m.link || (data.links && data.links.Zoom_Meeting_URL ? data.links.Zoom_Meeting_URL.url : "https://zoom.us/j/YOUR_ZOOM_MEETING_ID");
         return `
           <div data-meeting-month="${escapeHTML(m.month)}" class="p-4 rounded-xl border ${isNoMeeting ? "bg-slate-100/80 border-slate-200 text-slate-500" : "bg-white border-slate-200/90"} flex items-start justify-between gap-3 shadow-2xs">
             <div>
@@ -508,6 +509,19 @@ function applySyncedDataToDOM(data) {
               <p class="font-display font-bold text-base ${isNoMeeting ? "text-slate-500" : "text-[#1B2668]"} mt-0.5">${escapeHTML(m.date)}</p>
               <p class="text-xs text-slate-600 mt-0.5">${escapeHTML(m.desc || m.timeLoc)}</p>
             </div>
+            ${!isNoMeeting ? `
+              <a
+                href="${escapeHTML(zoomUrl)}"
+                data-config-link="zoom"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Join ${escapeHTML(m.month)} Meeting via Zoom"
+                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#2D8CFF]/10 hover:bg-[#2D8CFF] text-[#1A73E8] hover:text-white font-display font-bold text-xs transition shrink-0 mt-1"
+              >
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                <span>Zoom</span>
+              </a>
+            ` : ""}
           </div>
         `;
       }).join("");
@@ -548,6 +562,16 @@ function applySyncedDataToDOM(data) {
     if (data.links.Volunteer_Form_URL && data.links.Volunteer_Form_URL.url) {
       document.querySelectorAll("[data-config-link='volunteer']").forEach((el) => {
         el.setAttribute("href", data.links.Volunteer_Form_URL.url);
+      });
+    }
+    if (data.links.Committee_Form_URL && data.links.Committee_Form_URL.url) {
+      document.querySelectorAll("[data-config-link='committee']").forEach((el) => {
+        el.setAttribute("href", data.links.Committee_Form_URL.url);
+      });
+    }
+    if (data.links.Zoom_Meeting_URL && data.links.Zoom_Meeting_URL.url) {
+      document.querySelectorAll("[data-config-link='zoom']").forEach((el) => {
+        el.setAttribute("href", data.links.Zoom_Meeting_URL.url);
       });
     }
     if (data.links.Google_Calendar_URL && data.links.Google_Calendar_URL.url) {
