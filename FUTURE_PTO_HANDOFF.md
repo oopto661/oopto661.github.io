@@ -26,3 +26,11 @@ If you are setting up the Google Sheet connection or Contact Form for the very f
 3. **Activate the Contact Us Form & EIN:**
    - In `index.html`, replace `YOUR_PTO_EMAIL_HERE` (around the `#contact` form) with your official PTO email address (e.g., `info@oopto661.com`). The very first time someone submits the form, FormSubmit will email you a 1-click "Activate Form" confirmation button—click it once and it works forever!
    - In the footer of `index.html`, replace `XX-XXXXXXX` with the PTO's official 9-digit IRS EIN for Google Workspace for Nonprofits / Goodstack verification.
+
+---
+
+## 🌐 Dual Language Immersion (DLI) — Spanish Translation
+
+Because Old Orchard Elementary is a proud **Dual Language Immersion (DLI)** school, the site features a built-in 1-click translation toggle:
+* Located in the **dark blue announcement strip** at the top (`Traducir al Español` / `Switch to English`) and in the **mobile menu**.
+* **Zero extra work for PTO leaders:** When you update events, dates, or committees in Google Sheets or HTML, the site translates them into Spanish automatically for Spanish-speaking families on demand!
