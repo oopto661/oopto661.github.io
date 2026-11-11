@@ -63,4 +63,7 @@ LINK,Config,Zoom_Meeting_URL,Join via Zoom,Zoom Meeting Link for General PTO Mee
 LINK,Config,Google_Calendar_URL,View Live PTO Google Calendar,Subscribe to the Old Orchard PTO Google Calendar,https://calendar.google.com/calendar/u/0/r,Calendar CTA
 LINK,Config,Drive_Minutes_URL,View Agendas & Meeting Minutes,Public Google Drive folder for PTO Agendas and Minutes,https://drive.google.com/drive/folders/YOUR_MINUTES_FOLDER_ID,Transparency CTA
 LINK,Config,Drive_Bylaws_URL,PTO Bylaws & Budget,Public Google Drive folder for Bylaws and Approved Budget,https://drive.google.com/drive/folders/YOUR_BYLAWS_FOLDER_ID,Transparency CTA
+LINK,Config,Yearbook_Upload_URL,Upload Photos to Jostens,Direct Jostens Photo Share link for uploading yearbook pictures,https://photos.jostens.com/B33VPE,Yearbook CTA
+LINK,Config,Yearbook_Email,yearbook@oopto661.com,Yearbook Photo Questions and Photo Corrections Email,mailto:yearbook@oopto661.com,Yearbook Info
+LINK,Config,Instagram_URL,Follow on Instagram @oopto661,Official Old Orchard Elementary PTO Instagram profile,https://www.instagram.com/oopto661/,Social CTA
 LINK,Config,PTO_Contact_Email,president@oopto661.com,Official Old Orchard Elementary PTO Contact Email,mailto:president@oopto661.com,Contact Info

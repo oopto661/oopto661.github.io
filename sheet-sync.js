@@ -590,9 +590,25 @@ function applySyncedDataToDOM(data) {
       });
     }
     if (data.links.PTO_Contact_Email && data.links.PTO_Contact_Email.label) {
-      document.querySelectorAll("[data-config-email]").forEach((el) => {
+      document.querySelectorAll("[data-config-email]:not([data-config-email='yearbook'])").forEach((el) => {
         el.textContent = data.links.PTO_Contact_Email.label;
         el.setAttribute("href", `mailto:${data.links.PTO_Contact_Email.label}`);
+      });
+    }
+    if (data.links.Yearbook_Upload_URL && data.links.Yearbook_Upload_URL.url) {
+      document.querySelectorAll("[data-config-link='yearbook']").forEach((el) => {
+        el.setAttribute("href", data.links.Yearbook_Upload_URL.url);
+      });
+    }
+    if (data.links.Yearbook_Email && data.links.Yearbook_Email.label) {
+      document.querySelectorAll("[data-config-email='yearbook']").forEach((el) => {
+        el.textContent = data.links.Yearbook_Email.label;
+        el.setAttribute("href", `mailto:${data.links.Yearbook_Email.label}`);
+      });
+    }
+    if (data.links.Instagram_URL && data.links.Instagram_URL.url) {
+      document.querySelectorAll("[data-config-link='instagram']").forEach((el) => {
+        el.setAttribute("href", data.links.Instagram_URL.url);
       });
     }
   }

@@ -8,7 +8,7 @@ Our website is connected directly to our **Old Orchard PTO Google Sheet**. You n
 ## ✨ How to Update the Website in 3 Simple Steps
 
 * **1. Open the "Old Orchard PTO Website Master Sheet" in Google Drive:** Log into the official PTO Google Drive account and open the spreadsheet that controls the website.
-* **2. Edit Any Row (Just Like a Normal Spreadsheet):** Change an event date under `EVENT`, update a monthly meeting under `MEETING`, type in the new PTO Board Member names and emails under `BOARD`, or update your Zoom link (`Zoom_Meeting_URL`), Committee form link (`Committee_Form_URL`), or Volunteer form link under `LINK`. *(Just keep the column headers in Row 1 and the labels in Column A—`EVENT`, `MEETING`, `COMMITTEE`, `BOARD`, `LINK`—unchanged!)*
+* **2. Edit Any Row (Just Like a Normal Spreadsheet):** Change an event date under `EVENT`, update a monthly meeting under `MEETING`, type in the new PTO Board Member names and emails under `BOARD`, or update your Zoom link (`Zoom_Meeting_URL`), Committee form link (`Committee_Form_URL`), Volunteer form link (`Volunteer_Form_URL`), Instagram profile (`Instagram_URL`), or Yearbook photo upload link (`Yearbook_Upload_URL`) and questions email (`Yearbook_Email`) under `LINK`. *(Just keep the column headers in Row 1 and the labels in Column A—`EVENT`, `MEETING`, `COMMITTEE`, `BOARD`, `LINK`—unchanged!)*
 * **3. Refresh `oopto661.com` to See Your Changes Live:** Google Sheets saves and publishes your edits automatically! Within 1–2 minutes, open `oopto661.com` and refresh your browser to see the updated schedule, board roster, and links live on the website.
 
 ---
