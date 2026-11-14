@@ -445,7 +445,7 @@ function groupPastItemsIntoDetails(currentMonth) {
     const summaryLabel = document.getElementById("past-events-summary-label");
     if (summaryLabel) {
       const lastPast = SCHOOL_YEAR_MONTHS[currentIdx - 1];
-      summaryLabel.textContent = `View Past Events (Aug – ${lastPast} • ${pastCount} ${pastCount === 1 ? "month" : "months"})`;
+      summaryLabel.textContent = `View Past Events (Aug – ${lastPast})`;
     }
     pastDetails.classList.toggle("hidden", pastCount === 0);
   }
@@ -497,7 +497,7 @@ function groupPastItemsIntoDetails(currentMonth) {
     const summaryLabel = document.getElementById("past-meetings-summary-label");
     if (summaryLabel) {
       const lastPast = SCHOOL_YEAR_MONTHS[currentIdx - 1];
-      summaryLabel.textContent = `View Past PTO Meetings (Aug – ${lastPast} • ${pastMeetingCount} ${pastMeetingCount === 1 ? "meeting" : "meetings"})`;
+      summaryLabel.textContent = `View Past PTO Meetings (Aug – ${lastPast})`;
     }
     pastMeetingsDetails.classList.toggle("hidden", pastMeetingCount === 0);
   }
