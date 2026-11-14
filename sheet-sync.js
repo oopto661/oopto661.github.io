@@ -674,8 +674,8 @@ function applySyncedDataToDOM(data) {
     }
   }
 
-  // 5. Update Configurable Quick Links if present (ignore unconfigured YOUR_ placeholders)
-  const isValidConfiguredUrl = (u) => u && u.trim() !== "" && !u.includes("YOUR_");
+  // 5. Update Configurable Quick Links if present (ignore unconfigured YOUR_ or generic placeholders)
+  const isValidConfiguredUrl = (u) => u && u.trim() !== "" && !u.includes("YOUR_") && !u.endsWith("/calendar/u/0/r");
   if (data.links) {
     if (data.links.Volunteer_Form_URL && isValidConfiguredUrl(data.links.Volunteer_Form_URL.url)) {
       document.querySelectorAll("[data-config-link='volunteer']").forEach((el) => {
