@@ -385,6 +385,110 @@ function highlightActiveMonthsInDOM() {
       }
     }
   });
+
+  groupPastItemsIntoDetails(currentMonth);
+}
+
+/**
+ * Automatically move past months/meetings (before currentMonth) into collapsed <details> accordions
+ */
+function groupPastItemsIntoDetails(currentMonth) {
+  const currentIdx = SCHOOL_YEAR_MONTHS.indexOf(currentMonth);
+  if (currentIdx <= 0) return;
+
+  // 1. Annual Events Grid
+  const eventsGrid = document.getElementById("annual-events-grid");
+  if (eventsGrid) {
+    let pastDetails = document.getElementById("past-events-details");
+    if (!pastDetails) {
+      eventsGrid.classList.remove("mb-14");
+      eventsGrid.classList.add("mb-6");
+      pastDetails = document.createElement("details");
+      pastDetails.id = "past-events-details";
+      pastDetails.className = "mb-14 rounded-2xl bg-slate-50/90 border border-slate-200/90 p-4 sm:p-5";
+      pastDetails.innerHTML = `
+        <summary class="cursor-pointer select-none flex items-center justify-between gap-3 font-display font-bold text-sm sm:text-base text-slate-600 hover:text-[#1B2668] transition">
+          <span class="inline-flex items-center gap-2">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-extrabold bg-slate-200 text-slate-600">Archive</span>
+            <span id="past-events-summary-label">View Past Events</span>
+          </span>
+          <span class="text-xs font-semibold text-slate-400">Click to expand / collapse</span>
+        </summary>
+        <div id="past-events-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-5"></div>
+      `;
+      eventsGrid.insertAdjacentElement("afterend", pastDetails);
+    }
+
+    const pastEventsGrid = document.getElementById("past-events-grid");
+    const allMonthCards = Array.from(document.querySelectorAll("[data-month-card]"));
+    let pastCount = 0;
+
+    allMonthCards.forEach((card) => {
+      const m = card.getAttribute("data-month-card");
+      const mIdx = SCHOOL_YEAR_MONTHS.indexOf(m);
+      if (mIdx !== -1 && mIdx < currentIdx) {
+        card.classList.add("opacity-85");
+        pastEventsGrid.appendChild(card);
+        pastCount++;
+      } else {
+        card.classList.remove("opacity-85");
+        eventsGrid.appendChild(card);
+      }
+    });
+
+    const summaryLabel = document.getElementById("past-events-summary-label");
+    if (summaryLabel) {
+      const lastPast = SCHOOL_YEAR_MONTHS[currentIdx - 1];
+      summaryLabel.textContent = `View Past Events (Aug – ${lastPast} • ${pastCount} ${pastCount === 1 ? "month" : "months"})`;
+    }
+    pastDetails.classList.toggle("hidden", pastCount === 0);
+  }
+
+  // 2. General PTO Meetings Schedule
+  const meetingsGrid = document.getElementById("meetings-schedule-grid");
+  if (meetingsGrid) {
+    let pastMeetingsDetails = document.getElementById("past-meetings-details");
+    if (!pastMeetingsDetails) {
+      pastMeetingsDetails = document.createElement("details");
+      pastMeetingsDetails.id = "past-meetings-details";
+      pastMeetingsDetails.className = "mt-5 rounded-2xl bg-slate-50/90 border border-slate-200/90 p-4";
+      pastMeetingsDetails.innerHTML = `
+        <summary class="cursor-pointer select-none flex items-center justify-between gap-2 font-display font-bold text-xs sm:text-sm text-slate-600 hover:text-[#1B2668] transition">
+          <span class="inline-flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded-full text-[11px] font-extrabold bg-slate-200 text-slate-600">Archive</span>
+            <span id="past-meetings-summary-label">View Past Meetings</span>
+          </span>
+          <span class="text-[11px] font-semibold text-slate-400">Click to expand</span>
+        </summary>
+        <div id="past-meetings-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mt-4"></div>
+      `;
+      meetingsGrid.insertAdjacentElement("afterend", pastMeetingsDetails);
+    }
+
+    const pastMeetingsGrid = document.getElementById("past-meetings-grid");
+    const allMeetingRows = Array.from(document.querySelectorAll("[data-meeting-month]"));
+    let pastMeetingCount = 0;
+
+    allMeetingRows.forEach((row) => {
+      const m = row.getAttribute("data-meeting-month");
+      const mIdx = SCHOOL_YEAR_MONTHS.indexOf(m);
+      if (mIdx !== -1 && mIdx < currentIdx) {
+        row.classList.add("opacity-75");
+        pastMeetingsGrid.appendChild(row);
+        pastMeetingCount++;
+      } else {
+        row.classList.remove("opacity-75");
+        meetingsGrid.appendChild(row);
+      }
+    });
+
+    const summaryLabel = document.getElementById("past-meetings-summary-label");
+    if (summaryLabel) {
+      const lastPast = SCHOOL_YEAR_MONTHS[currentIdx - 1];
+      summaryLabel.textContent = `View Past PTO Meetings (Aug – ${lastPast} • ${pastMeetingCount} ${pastMeetingCount === 1 ? "meeting" : "meetings"})`;
+    }
+    pastMeetingsDetails.classList.toggle("hidden", pastMeetingCount === 0);
+  }
 }
 
 /**
@@ -426,6 +530,19 @@ function setupCalendarFilters() {
           card.classList.add("hidden");
         }
       });
+
+      // Handle past events <details> visibility & state based on filter
+      const pastDetails = document.getElementById("past-events-details");
+      if (pastDetails) {
+        const hasVisiblePast = Array.from(pastDetails.querySelectorAll("[data-month-card]"))
+          .some((card) => !card.classList.contains("hidden"));
+        pastDetails.classList.toggle("hidden", !hasVisiblePast);
+        if (filterType === "fall" && hasVisiblePast) {
+          pastDetails.open = true;
+        } else if (filterType === "all") {
+          pastDetails.open = false;
+        }
+      }
     });
   });
 }

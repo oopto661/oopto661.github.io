@@ -61,7 +61,7 @@ LINK,Config,Volunteer_Form_URL,Sign Up to Volunteer,Google Form for PTO Voluntee
 LINK,Config,Committee_Form_URL,Join the Committee,Google Form for Joining a PTO Committee,https://docs.google.com/forms/d/e/1FAIpQLSfeGMcmgfXDSLcLSVt5qu-6UH6KFT8qs9Z3L-T78TKbSBTBkw/viewform,Committee CTA
 LINK,Config,Zoom_Meeting_URL,Join via Zoom,Zoom Meeting Link for General PTO Meetings,https://zoom.us/j/YOUR_ZOOM_MEETING_ID,Meeting CTA
 LINK,Config,Google_Calendar_URL,View Live PTO Google Calendar,Subscribe to the Old Orchard PTO Google Calendar,https://calendar.google.com/calendar/u/0/r,Calendar CTA
-LINK,Config,Drive_Minutes_URL,View Agendas & Meeting Minutes,Public Google Drive folder for PTO Agendas and Minutes,https://drive.google.com/drive/folders/YOUR_MINUTES_FOLDER_ID,Transparency CTA
+LINK,Config,Drive_Minutes_URL,View Agendas & Meeting Minutes,Public Google Drive folder for PTO Agendas and Minutes,https://drive.google.com/drive/folders/1j2DKMP62_EyLWbmr7lsIQO2AHVrwkbvH,Transparency CTA
 LINK,Config,Drive_Bylaws_URL,PTO Bylaws & Budget,Public Google Drive folder for Bylaws and Approved Budget,https://drive.google.com/drive/folders/YOUR_BYLAWS_FOLDER_ID,Transparency CTA
 LINK,Config,Yearbook_Upload_URL,Upload Photos to Jostens,Direct Jostens Photo Share link for uploading yearbook pictures,https://photos.jostens.com/B33VPE,Yearbook CTA
 LINK,Config,Yearbook_Email,yearbook@oopto661.com,Yearbook Photo Questions and Photo Corrections Email,mailto:yearbook@oopto661.com,Yearbook Info
