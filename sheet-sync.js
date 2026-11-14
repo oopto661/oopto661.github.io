@@ -11,7 +11,7 @@
  * directly in `index.html` for an instantaneous 0.1s initial load and offline support!
  */
 
-const GOOGLE_SHEET_CSV_URL = ""; // Paste published Google Sheet CSV URL here when ready
+const GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRjCFGy-Rjqhbn1FLaf1GNtP_irKnAFEfFf9EkgO7GEusMsQi_sGXtw6XeJGLOJPTlO0aiA17QS46e6/pub?gid=252000025&single=true&output=csv";
 const CACHE_KEY = "oo_pto_sheet_cache_v26_27";
 
 // Default Baked-In 2026-2027 Dataset (used for instant spotlight computation & fallback)
@@ -649,7 +649,14 @@ async function initGoogleSheetSync() {
 
   // Step 2: Revalidate in background from live Google Sheet CSV
   try {
-    const response = await fetch(GOOGLE_SHEET_CSV_URL, { cache: "no-store" });
+    let targetUrl = GOOGLE_SHEET_CSV_URL.trim();
+    if (targetUrl.includes("/pubhtml")) {
+      targetUrl = targetUrl.replace("/pubhtml", "/pub");
+    }
+    if (targetUrl.includes("docs.google.com/spreadsheets") && !targetUrl.includes("output=csv")) {
+      targetUrl += (targetUrl.includes("?") ? "&" : "?") + "output=csv";
+    }
+    const response = await fetch(targetUrl, { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const csvText = await response.text();
     const rows = parseCSV(csvText);
