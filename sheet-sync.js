@@ -421,10 +421,16 @@ function groupPastItemsIntoDetails(currentMonth) {
 
     const pastEventsGrid = document.getElementById("past-events-grid");
     const allMonthCards = Array.from(document.querySelectorAll("[data-month-card]"));
+    const seenEventMonths = new Set();
     let pastCount = 0;
 
     allMonthCards.forEach((card) => {
       const m = card.getAttribute("data-month-card");
+      if (seenEventMonths.has(m)) {
+        card.remove();
+        return;
+      }
+      seenEventMonths.add(m);
       const mIdx = SCHOOL_YEAR_MONTHS.indexOf(m);
       if (mIdx !== -1 && mIdx < currentIdx) {
         card.classList.add("opacity-85");
@@ -467,10 +473,16 @@ function groupPastItemsIntoDetails(currentMonth) {
 
     const pastMeetingsGrid = document.getElementById("past-meetings-grid");
     const allMeetingRows = Array.from(document.querySelectorAll("[data-meeting-month]"));
+    const seenMeetingMonths = new Set();
     let pastMeetingCount = 0;
 
     allMeetingRows.forEach((row) => {
       const m = row.getAttribute("data-meeting-month");
+      if (seenMeetingMonths.has(m)) {
+        row.remove();
+        return;
+      }
+      seenMeetingMonths.add(m);
       const mIdx = SCHOOL_YEAR_MONTHS.indexOf(m);
       if (mIdx !== -1 && mIdx < currentIdx) {
         row.classList.add("opacity-75");
@@ -560,6 +572,8 @@ function applySyncedDataToDOM(data) {
 
   // 2. Update Annual Planner Grid if events exist
   if (data.events && data.events.length) {
+    const pastEventsGrid = document.getElementById("past-events-grid");
+    if (pastEventsGrid) pastEventsGrid.innerHTML = "";
     const gridEl = document.getElementById("annual-events-grid");
     if (gridEl) {
       const grouped = {};
@@ -609,6 +623,8 @@ function applySyncedDataToDOM(data) {
 
   // 3. Update Meetings List if present
   if (data.meetings && data.meetings.length) {
+    const pastMeetingsGrid = document.getElementById("past-meetings-grid");
+    if (pastMeetingsGrid) pastMeetingsGrid.innerHTML = "";
     const meetingsGrid = document.getElementById("meetings-schedule-grid");
     if (meetingsGrid) {
       meetingsGrid.innerHTML = data.meetings.map((m) => {
