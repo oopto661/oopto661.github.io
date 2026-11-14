@@ -84,18 +84,25 @@ const MONTH_SEASONS = {
   June: "spring"
 };
 
+const OWL_CARD_STYLE = {
+  headerBg: "bg-[#1B2668]",
+  border: "border-[#1B2668]/15",
+  headerBorder: "border-b-2 border-[#F5B716]",
+  pill: "bg-[#D81E28]/10 text-[#D81E28]"
+};
+
 const MONTH_STYLE_MAP = {
-  August: { headerBg: "bg-[#FDE2E4]", border: "border-[#f8c6ca]", pill: "bg-[#D81E28]/10 text-[#D81E28]" },
-  September: { headerBg: "bg-[#FDECC8]", border: "border-[#f5d89a]", pill: "bg-[#b47800]/15 text-[#8a5b00]" },
-  October: { headerBg: "bg-[#E2F0CB]", border: "border-[#c5e09b]", pill: "bg-[#2f681d]/15 text-[#275918]" },
-  November: { headerBg: "bg-[#E0F4FF]", border: "border-[#b3e2fc]", pill: "bg-[#1B2668]/10 text-[#1B2668]" },
-  December: { headerBg: "bg-[#FDECC8]", border: "border-[#f5d89a]", pill: "bg-[#b47800]/15 text-[#8a5b00]" },
-  January: { headerBg: "bg-[#E2F0CB]", border: "border-[#c5e09b]", pill: "bg-[#2f681d]/15 text-[#275918]" },
-  February: { headerBg: "bg-[#E0F4FF]", border: "border-[#b3e2fc]", pill: "bg-[#1B2668]/10 text-[#1B2668]" },
-  March: { headerBg: "bg-[#FDE2E4]", border: "border-[#f8c6ca]", pill: "bg-[#D81E28]/10 text-[#D81E28]" },
-  April: { headerBg: "bg-[#E2F0CB]", border: "border-[#c5e09b]", pill: "bg-[#2f681d]/15 text-[#275918]" },
-  May: { headerBg: "bg-[#E0F4FF]", border: "border-[#b3e2fc]", pill: "bg-[#1B2668]/10 text-[#1B2668]" },
-  June: { headerBg: "bg-[#FDE2E4]", border: "border-[#f8c6ca]", pill: "bg-[#D81E28]/10 text-[#D81E28]" }
+  August: OWL_CARD_STYLE,
+  September: OWL_CARD_STYLE,
+  October: OWL_CARD_STYLE,
+  November: OWL_CARD_STYLE,
+  December: OWL_CARD_STYLE,
+  January: OWL_CARD_STYLE,
+  February: OWL_CARD_STYLE,
+  March: OWL_CARD_STYLE,
+  April: OWL_CARD_STYLE,
+  May: OWL_CARD_STYLE,
+  June: OWL_CARD_STYLE
 };
 
 /**
@@ -363,12 +370,12 @@ function highlightActiveMonthsInDOM() {
     if (m && m.toLowerCase() === currentMonth.toLowerCase()) {
       card.classList.add("ring-4", "ring-[#F5B716]", "shadow-lg");
       if (badgeSlot) {
-        badgeSlot.innerHTML = `<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-[#1B2668] text-[#F5B716] shadow-xs">This Month</span>`;
+        badgeSlot.innerHTML = `<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-[#F5B716] text-[#1B2668] shadow-xs">This Month</span>`;
       }
     } else if (m && m.toLowerCase() === nextMonth.toLowerCase()) {
       card.classList.add("ring-2", "ring-[#1B2668]/30");
       if (badgeSlot) {
-        badgeSlot.innerHTML = `<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/80 text-[#1B2668]">Next Month</span>`;
+        badgeSlot.innerHTML = `<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/15 text-white border border-white/25">Next Month</span>`;
       }
     }
   });
@@ -605,8 +612,8 @@ function applySyncedDataToDOM(data) {
         return `
           <article data-month-card="${escapeHTML(month)}" class="rounded-2xl bg-[#FDF8F2] border ${style.border} overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
             <div>
-              <div class="${style.headerBg} px-5 py-3.5 flex items-center justify-between border-b ${style.border}">
-                <h3 class="font-script text-2xl text-[#1B2668] tracking-wide">${escapeHTML(month)}</h3>
+              <div class="${style.headerBg} px-5 py-3.5 flex items-center justify-between ${style.headerBorder || "border-b-2 border-[#F5B716]"}">
+                <h3 class="font-script text-3xl text-white tracking-wide">${escapeHTML(month)}</h3>
                 <div data-month-badge></div>
               </div>
               <div class="p-5">

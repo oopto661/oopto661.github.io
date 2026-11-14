@@ -458,40 +458,20 @@
           </div>
         </div>
 
-        <!-- Filter Bar for the 2026-2027 Annual Event Grid -->
-        <div id="calendar" class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-7 pt-2">
-          <div>
-            <h3 class="font-display font-black text-2xl text-[#1B2668] flex items-center gap-2.5">
-              <span>2026–2027 Annual Event Grid</span>
-              <span class="font-script text-2xl text-[#D81E28] font-normal">PTO Planner 26–27</span>
-            </h3>
-          </div>
-          <div class="flex flex-wrap items-center gap-2" role="group" aria-label="Filter calendar by season">
-            <button type="button" data-calendar-filter="all" class="px-3.5 py-1.5 rounded-xl text-xs font-extrabold bg-[#1B2668] text-white shadow-sm transition">
-              All Months (Aug–Jun)
-            </button>
-            <button type="button" data-calendar-filter="spotlight" class="px-3.5 py-1.5 rounded-xl text-xs font-extrabold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 transition">
-              This &amp; Next Month
-            </button>
-            <button type="button" data-calendar-filter="fall" class="px-3.5 py-1.5 rounded-xl text-xs font-extrabold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 transition">
-              Fall (Aug–Nov)
-            </button>
-            <button type="button" data-calendar-filter="winter" class="px-3.5 py-1.5 rounded-xl text-xs font-extrabold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 transition">
-              Winter (Dec–Feb)
-            </button>
-            <button type="button" data-calendar-filter="spring" class="px-3.5 py-1.5 rounded-xl text-xs font-extrabold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 transition">
-              Spring (Mar–Jun)
-            </button>
-          </div>
+        <!-- Header for the 2026-2027 Event Calendar -->
+        <div id="calendar" class="mb-7 pt-2">
+          <h3 class="font-display font-black text-2xl sm:text-3xl text-[#1B2668]">
+            2026–2027 Event Calendar
+          </h3>
         </div>
 
         <!-- Pre-Rendered 2026-2027 Monthly Planner Cards (Instant 0.1s Paint + Offline Ready) -->
         <div id="annual-events-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-14">
           <!-- AUGUST -->
-          <article data-month-card="August" class="rounded-2xl bg-[#FDF8F2] border border-[#f8c6ca] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+          <article data-month-card="August" class="rounded-2xl bg-[#FDF8F2] border border-[#1B2668]/15 overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
             <div>
-              <div class="bg-[#FDE2E4] px-5 py-3.5 flex items-center justify-between border-b border-[#f8c6ca]">
-                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">August</h4>
+              <div class="bg-[#1B2668] px-5 py-3.5 flex items-center justify-between border-b-2 border-[#F5B716]">
+                <h4 class="font-script text-3xl text-white tracking-wide">August</h4>
                 <div data-month-badge></div>
               </div>
               <div class="p-5">
@@ -517,20 +497,20 @@
           </article>
 
           <!-- SEPTEMBER -->
-          <article data-month-card="September" class="rounded-2xl bg-[#FDF8F2] border border-[#f5d89a] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+          <article data-month-card="September" class="rounded-2xl bg-[#FDF8F2] border border-[#1B2668]/15 overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
             <div>
-              <div class="bg-[#FDECC8] px-5 py-3.5 flex items-center justify-between border-b border-[#f5d89a]">
-                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">September</h4>
+              <div class="bg-[#1B2668] px-5 py-3.5 flex items-center justify-between border-b-2 border-[#F5B716]">
+                <h4 class="font-script text-3xl text-white tracking-wide">September</h4>
                 <div data-month-badge></div>
               </div>
               <div class="p-5">
                 <ul class="space-y-3">
                   <li class="flex items-start gap-2.5 text-sm">
-                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#b47800]/15 text-[#8a5b00]">Sep 14</span>
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#D81E28]/10 text-[#D81E28]">Sep 14</span>
                     <span class="font-semibold text-slate-800 leading-snug">PowerUp PledgeDrive Kickoff</span>
                   </li>
                   <li class="flex items-start gap-2.5 text-sm">
-                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#b47800]/15 text-[#8a5b00]">Sep 18</span>
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#D81E28]/10 text-[#D81E28]">Sep 18</span>
                     <span class="font-semibold text-slate-800 leading-snug">Fall Festival</span>
                   </li>
                   <li class="flex items-start gap-2.5 text-sm pt-1 border-t border-slate-200/60">
@@ -546,16 +526,16 @@
           </article>
 
           <!-- OCTOBER -->
-          <article data-month-card="October" class="rounded-2xl bg-[#FDF8F2] border border-[#c5e09b] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+          <article data-month-card="October" class="rounded-2xl bg-[#FDF8F2] border border-[#1B2668]/15 overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
             <div>
-              <div class="bg-[#E2F0CB] px-5 py-3.5 flex items-center justify-between border-b border-[#c5e09b]">
-                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">October</h4>
+              <div class="bg-[#1B2668] px-5 py-3.5 flex items-center justify-between border-b-2 border-[#F5B716]">
+                <h4 class="font-script text-3xl text-white tracking-wide">October</h4>
                 <div data-month-badge></div>
               </div>
               <div class="p-5">
                 <ul class="space-y-3">
                   <li class="flex items-start gap-2.5 text-sm">
-                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#2f681d]/15 text-[#275918]">Oct 1</span>
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#D81E28]/10 text-[#D81E28]">Oct 1</span>
                     <span class="font-semibold text-slate-800 leading-snug">PowerUp Fun Run</span>
                   </li>
                   <li class="flex items-start gap-2.5 text-sm pt-1 border-t border-slate-200/60">
@@ -566,11 +546,11 @@
                     </div>
                   </li>
                   <li class="flex items-start gap-2.5 text-sm">
-                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#2f681d]/15 text-[#275918]">Oct 30</span>
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#D81E28]/10 text-[#D81E28]">Oct 30</span>
                     <span class="font-semibold text-slate-800 leading-snug">Trunk or Treat</span>
                   </li>
                   <li class="flex items-start gap-2.5 text-sm">
-                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#2f681d]/15 text-[#275918]">Oct 30</span>
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#D81E28]/10 text-[#D81E28]">Oct 30</span>
                     <span class="font-semibold text-slate-800 leading-snug">Halloween Parade</span>
                   </li>
                 </ul>
@@ -579,10 +559,10 @@
           </article>
 
           <!-- NOVEMBER -->
-          <article data-month-card="November" class="rounded-2xl bg-[#FDF8F2] border border-[#b3e2fc] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+          <article data-month-card="November" class="rounded-2xl bg-[#FDF8F2] border border-[#1B2668]/15 overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
             <div>
-              <div class="bg-[#E0F4FF] px-5 py-3.5 flex items-center justify-between border-b border-[#b3e2fc]">
-                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">November</h4>
+              <div class="bg-[#1B2668] px-5 py-3.5 flex items-center justify-between border-b-2 border-[#F5B716]">
+                <h4 class="font-script text-3xl text-white tracking-wide">November</h4>
                 <div data-month-badge></div>
               </div>
               <div class="p-5">
@@ -604,20 +584,20 @@
           </article>
 
           <!-- DECEMBER -->
-          <article data-month-card="December" class="rounded-2xl bg-[#FDF8F2] border border-[#f5d89a] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+          <article data-month-card="December" class="rounded-2xl bg-[#FDF8F2] border border-[#1B2668]/15 overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
             <div>
-              <div class="bg-[#FDECC8] px-5 py-3.5 flex items-center justify-between border-b border-[#f5d89a]">
-                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">December</h4>
+              <div class="bg-[#1B2668] px-5 py-3.5 flex items-center justify-between border-b-2 border-[#F5B716]">
+                <h4 class="font-script text-3xl text-white tracking-wide">December</h4>
                 <div data-month-badge></div>
               </div>
               <div class="p-5">
                 <ul class="space-y-3">
                   <li class="flex items-start gap-2.5 text-sm">
-                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#b47800]/15 text-[#8a5b00]">Dec 1–4</span>
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#D81E28]/10 text-[#D81E28]">Dec 1–4</span>
                     <span class="font-semibold text-slate-800 leading-snug">Family Gift Basket Collection</span>
                   </li>
                   <li class="flex items-start gap-2.5 text-sm">
-                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#b47800]/15 text-[#8a5b00]">Dec 7–11</span>
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#D81E28]/10 text-[#D81E28]">Dec 7–11</span>
                     <span class="font-semibold text-slate-800 leading-snug">Holiday Gift Shop</span>
                   </li>
                   <li class="flex items-start gap-2.5 text-xs text-slate-400 italic pt-1 border-t border-slate-200/60">
@@ -629,10 +609,10 @@
           </article>
 
           <!-- JANUARY -->
-          <article data-month-card="January" class="rounded-2xl bg-[#FDF8F2] border border-[#c5e09b] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+          <article data-month-card="January" class="rounded-2xl bg-[#FDF8F2] border border-[#1B2668]/15 overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
             <div>
-              <div class="bg-[#E2F0CB] px-5 py-3.5 flex items-center justify-between border-b border-[#c5e09b]">
-                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">January</h4>
+              <div class="bg-[#1B2668] px-5 py-3.5 flex items-center justify-between border-b-2 border-[#F5B716]">
+                <h4 class="font-script text-3xl text-white tracking-wide">January</h4>
                 <div data-month-badge></div>
               </div>
               <div class="p-5">
@@ -645,7 +625,7 @@
                     </div>
                   </li>
                   <li class="flex items-start gap-2.5 text-sm">
-                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#2f681d]/15 text-[#275918]">Jan 29</span>
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#D81E28]/10 text-[#D81E28]">Jan 29</span>
                     <span class="font-semibold text-slate-800 leading-snug">Chuck E Cheese Night</span>
                   </li>
                 </ul>
@@ -654,10 +634,10 @@
           </article>
 
           <!-- FEBRUARY -->
-          <article data-month-card="February" class="rounded-2xl bg-[#FDF8F2] border border-[#b3e2fc] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+          <article data-month-card="February" class="rounded-2xl bg-[#FDF8F2] border border-[#1B2668]/15 overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
             <div>
-              <div class="bg-[#E0F4FF] px-5 py-3.5 flex items-center justify-between border-b border-[#b3e2fc]">
-                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">February</h4>
+              <div class="bg-[#1B2668] px-5 py-3.5 flex items-center justify-between border-b-2 border-[#F5B716]">
+                <h4 class="font-script text-3xl text-white tracking-wide">February</h4>
                 <div data-month-badge></div>
               </div>
               <div class="p-5">
@@ -691,10 +671,10 @@
           </article>
 
           <!-- MARCH -->
-          <article data-month-card="March" class="rounded-2xl bg-[#FDF8F2] border border-[#f8c6ca] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+          <article data-month-card="March" class="rounded-2xl bg-[#FDF8F2] border border-[#1B2668]/15 overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
             <div>
-              <div class="bg-[#FDE2E4] px-5 py-3.5 flex items-center justify-between border-b border-[#f8c6ca]">
-                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">March</h4>
+              <div class="bg-[#1B2668] px-5 py-3.5 flex items-center justify-between border-b-2 border-[#F5B716]">
+                <h4 class="font-script text-3xl text-white tracking-wide">March</h4>
                 <div data-month-badge></div>
               </div>
               <div class="p-5">
@@ -728,16 +708,16 @@
           </article>
 
           <!-- APRIL -->
-          <article data-month-card="April" class="rounded-2xl bg-[#FDF8F2] border border-[#c5e09b] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+          <article data-month-card="April" class="rounded-2xl bg-[#FDF8F2] border border-[#1B2668]/15 overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
             <div>
-              <div class="bg-[#E2F0CB] px-5 py-3.5 flex items-center justify-between border-b border-[#c5e09b]">
-                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">April</h4>
+              <div class="bg-[#1B2668] px-5 py-3.5 flex items-center justify-between border-b-2 border-[#F5B716]">
+                <h4 class="font-script text-3xl text-white tracking-wide">April</h4>
                 <div data-month-badge></div>
               </div>
               <div class="p-5">
                 <ul class="space-y-3">
                   <li class="flex items-start gap-2.5 text-sm">
-                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#2f681d]/15 text-[#275918]">Apr 22</span>
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#D81E28]/10 text-[#D81E28]">Apr 22</span>
                     <span class="font-semibold text-slate-800 leading-snug">Multicultural Night</span>
                   </li>
                   <li class="flex items-start gap-2.5 text-sm pt-1 border-t border-slate-200/60">
@@ -748,7 +728,7 @@
                     </div>
                   </li>
                   <li class="flex items-start gap-2.5 text-sm">
-                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#2f681d]/15 text-[#275918]">Apr 26–30</span>
+                    <span class="inline-block px-2 py-0.5 rounded-md font-bold text-xs whitespace-nowrap mt-0.5 bg-[#D81E28]/10 text-[#D81E28]">Apr 26–30</span>
                     <span class="font-semibold text-slate-800 leading-snug">Staff Appreciation</span>
                   </li>
                 </ul>
@@ -757,10 +737,10 @@
           </article>
 
           <!-- MAY -->
-          <article data-month-card="May" class="rounded-2xl bg-[#FDF8F2] border border-[#b3e2fc] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+          <article data-month-card="May" class="rounded-2xl bg-[#FDF8F2] border border-[#1B2668]/15 overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
             <div>
-              <div class="bg-[#E0F4FF] px-5 py-3.5 flex items-center justify-between border-b border-[#b3e2fc]">
-                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">May</h4>
+              <div class="bg-[#1B2668] px-5 py-3.5 flex items-center justify-between border-b-2 border-[#F5B716]">
+                <h4 class="font-script text-3xl text-white tracking-wide">May</h4>
                 <div data-month-badge></div>
               </div>
               <div class="p-5">
@@ -786,10 +766,10 @@
           </article>
 
           <!-- JUNE -->
-          <article data-month-card="June" class="rounded-2xl bg-[#FDF8F2] border border-[#f8c6ca] overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md sm:col-span-2 lg:col-span-2">
+          <article data-month-card="June" class="rounded-2xl bg-[#FDF8F2] border border-[#1B2668]/15 overflow-hidden flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md sm:col-span-2 lg:col-span-2">
             <div>
-              <div class="bg-[#FDE2E4] px-5 py-3.5 flex items-center justify-between border-b border-[#f8c6ca]">
-                <h4 class="font-script text-3xl text-[#1B2668] tracking-wide">June</h4>
+              <div class="bg-[#1B2668] px-5 py-3.5 flex items-center justify-between border-b-2 border-[#F5B716]">
+                <h4 class="font-script text-3xl text-white tracking-wide">June</h4>
                 <div data-month-badge></div>
               </div>
               <div class="p-5 flex items-center justify-between gap-4">
