@@ -58,7 +58,7 @@ BOARD,Chair,Social Media Coordinator,McKenna Gates,social@oopto661.com,,2026–2
 LINK,Config,Pledgestar_URL,Donate via Pledgestar,Direct Giving & PowerUp PledgeDrive,https://orchard.pledgestar.com/Welcome.html,Primary CTA
 LINK,Config,PBIS_Wishlist_URL,Shop the PBIS Amazon Wishlist,Stock the Old Orchard Owls PBIS Reward Store,https://www.amazon.com/hz/wishlist/ls/3ES45EDEJPGX0/ref=hz_ls_biz_ex,Secondary CTA
 LINK,Config,Volunteer_Form_URL,Sign Up to Volunteer,Google Form for PTO Volunteer Sign-Ups,https://docs.google.com/forms/d/e/YOUR_VOLUNTEER_FORM_ID/viewform,Volunteer CTA
-LINK,Config,Committee_Form_URL,Join the Committee,Google Form for Joining a PTO Committee,https://docs.google.com/forms/d/e/YOUR_COMMITTEE_FORM_ID/viewform,Committee CTA
+LINK,Config,Committee_Form_URL,Join the Committee,Google Form for Joining a PTO Committee,https://docs.google.com/forms/d/e/1FAIpQLSfeGMcmgfXDSLcLSVt5qu-6UH6KFT8qs9Z3L-T78TKbSBTBkw/viewform,Committee CTA
 LINK,Config,Zoom_Meeting_URL,Join via Zoom,Zoom Meeting Link for General PTO Meetings,https://zoom.us/j/YOUR_ZOOM_MEETING_ID,Meeting CTA
 LINK,Config,Google_Calendar_URL,View Live PTO Google Calendar,Subscribe to the Old Orchard PTO Google Calendar,https://calendar.google.com/calendar/u/0/r,Calendar CTA
 LINK,Config,Drive_Minutes_URL,View Agendas & Meeting Minutes,Public Google Drive folder for PTO Agendas and Minutes,https://drive.google.com/drive/folders/YOUR_MINUTES_FOLDER_ID,Transparency CTA

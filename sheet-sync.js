@@ -557,34 +557,35 @@ function applySyncedDataToDOM(data) {
     }
   }
 
-  // 5. Update Configurable Quick Links if present
+  // 5. Update Configurable Quick Links if present (ignore unconfigured YOUR_ placeholders)
+  const isValidConfiguredUrl = (u) => u && u.trim() !== "" && !u.includes("YOUR_");
   if (data.links) {
-    if (data.links.Volunteer_Form_URL && data.links.Volunteer_Form_URL.url) {
+    if (data.links.Volunteer_Form_URL && isValidConfiguredUrl(data.links.Volunteer_Form_URL.url)) {
       document.querySelectorAll("[data-config-link='volunteer']").forEach((el) => {
         el.setAttribute("href", data.links.Volunteer_Form_URL.url);
       });
     }
-    if (data.links.Committee_Form_URL && data.links.Committee_Form_URL.url) {
+    if (data.links.Committee_Form_URL && isValidConfiguredUrl(data.links.Committee_Form_URL.url)) {
       document.querySelectorAll("[data-config-link='committee']").forEach((el) => {
         el.setAttribute("href", data.links.Committee_Form_URL.url);
       });
     }
-    if (data.links.Zoom_Meeting_URL && data.links.Zoom_Meeting_URL.url) {
+    if (data.links.Zoom_Meeting_URL && isValidConfiguredUrl(data.links.Zoom_Meeting_URL.url)) {
       document.querySelectorAll("[data-config-link='zoom']").forEach((el) => {
         el.setAttribute("href", data.links.Zoom_Meeting_URL.url);
       });
     }
-    if (data.links.Google_Calendar_URL && data.links.Google_Calendar_URL.url) {
+    if (data.links.Google_Calendar_URL && isValidConfiguredUrl(data.links.Google_Calendar_URL.url)) {
       document.querySelectorAll("[data-config-link='gcal']").forEach((el) => {
         el.setAttribute("href", data.links.Google_Calendar_URL.url);
       });
     }
-    if (data.links.Drive_Minutes_URL && data.links.Drive_Minutes_URL.url) {
+    if (data.links.Drive_Minutes_URL && isValidConfiguredUrl(data.links.Drive_Minutes_URL.url)) {
       document.querySelectorAll("[data-config-link='minutes']").forEach((el) => {
         el.setAttribute("href", data.links.Drive_Minutes_URL.url);
       });
     }
-    if (data.links.Drive_Bylaws_URL && data.links.Drive_Bylaws_URL.url) {
+    if (data.links.Drive_Bylaws_URL && isValidConfiguredUrl(data.links.Drive_Bylaws_URL.url)) {
       document.querySelectorAll("[data-config-link='bylaws']").forEach((el) => {
         el.setAttribute("href", data.links.Drive_Bylaws_URL.url);
       });
